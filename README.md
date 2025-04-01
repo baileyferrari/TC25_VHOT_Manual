@@ -24,7 +24,7 @@
 
 ---
 
-# Step 1: Create a Tableau Cloud Trial Site (Bailey)
+# Step 1: Create a Tableau Cloud Trial Site
 
 ## 1. Set Up Your Browser Windows
 
