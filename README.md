@@ -249,7 +249,9 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
 
 ---
 
-## 1. Open Pipeline Metric
+### Open Pipeline Metric
+
+## 1. Create New Metric
 
 1. From the left-hand navigation, click **Pulse**.
 2. Click **New Metric Definition**.
@@ -308,6 +310,8 @@ Click **Next > Insights**
 
 Leave other insights settings unchanged.
 
+<br>
+
 ## 9. Final Steps
 - **Add Yourself** as a follower of the metric.
 - After the metric is created, click the **ellipses (…)** on the metric tile and select **Set Goal**.
@@ -317,44 +321,59 @@ Leave other insights settings unchanged.
 
 <br>
 
-## ⏱️ Average Days to Close Metric
+### ⏱️ Average Days to Close Metric
 
+## 1. Create New Metric
 1. Click **New Metric Definition**.
 2. Connect to the same **Sales Cloud Data** source.
 3. Label the metric: **Avg Days to Close**
 
-### Metric Setup
+<br>
+
+## 2. Metric Setup
 - **Measure**: `Days to Close`
   - Change Aggregation to: `Average`
 - **Time Dimension**: `Close Date`
+
+<br>
 
 ### Definition Filters
 - Filter on `Stage`
   - **Include only**: `Closed Won`
 
-### Adjustable Metric Filters
+<br>
+
+## 3. Adjustable Metric Filters
 - Account Name  
 - Forecast Category  
 - Opportunity Owner  
 - Account Type  
 - Lead Source  
 
-### Formatting
+<br>
+
+## 4. Formatting
 - **Number Format**: `Number`  
 - **Singular**: `Day`  
 - **Plural**: `Days`
 
-### Time Settings
+<br>
+
+## 5. Time Settings
 Click **Next > Time**
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`  
 - **Time Comparison**: Keep defaults
 
-### Goal Settings
+<br>
+
+## 6. Goal Settings
 Click **Next > Goals**  
 - Skip
 
-### Insights
+<br>
+
+## 7. Insights
 Click **Next > Insights**
 - **Value Going Up**: `Unfavorable`
 - **Turn off** Record Level Insights
@@ -364,13 +383,16 @@ Return to the **Pulse Home Page**.
 
 <br>
 
-## 🏆 Win Rate Metric
+### 🏆 Win Rate Metric
 
+## 1. Create a New Metric
 1. From the Pulse Home Page, click **New Metric**.
 2. Connect to the **Sales Cloud Data** data source.
 3. Title the metric: **Win Rate**
 
-### Advanced Definition Setup
+<br>
+
+## 2. Advanced Definition Setup
 
 1. Click **Advanced Definition**.
 2. In the Advanced Analytics Editor, create a new calculated field:
@@ -384,24 +406,32 @@ Return to the **Pulse Home Page**.
 3. Drag the `Win Rate` calculated field to the **Measure** box.
 4. Drag `Close Date` to the **Time Dimension** box.
    - Click the **Month pill** → Select `Month` → Click **Apply**
+  
+<br>
 
-### Adjustable Metric Filters
+## 3. Adjustable Metric Filters
 - Opportunity Owner  
 - Industry  
 - Lead Source  
 
-### Formatting
+<br>
+
+## 4. Formatting
 - **Number Format**: `Percentage`
 
 Click **Next**
 
-### Time Settings
+<br>
+
+## 5. Time Settings
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`
 
 Click **Next**
 
-### Insights
+<br>
+
+## 6. Insights
 - **Value Going Up**: `Favorable`
 - **Turn Off** Record Level Outliers
 
