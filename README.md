@@ -243,3 +243,167 @@ In the upper left corner, click **“File”** → **“Close”** to return to 
 
 ---
 
+# Step 4: Create Pulse Metrics
+
+In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud Data" source you uploaded earlier.
+
+---
+
+## 📈 Open Pipeline Metric
+
+1. From the left-hand navigation, click **Pulse**.
+2. Click **New Metric Definition**.
+3. Search for and connect to your **Sales Cloud Data** published data source.
+4. Label the metric: **Open Pipeline**
+
+### Metric Setup
+- **Measure**: `Amount`
+  - Keep Aggregation as default: `Sum`, `Running Total`
+- **Time Dimension**: `Close Date`
+
+### Definition Filters
+- Filter on `Stage`
+  - **Exclude**: `Closed Lost`, `Closed Won`
+
+### Adjustable Metric Filters
+- Account Name  
+- Account Type  
+- Opportunity Owner  
+- Stage  
+- Forecast Category  
+
+### Formatting
+- **Number Format**: Currency (`USD`)
+
+### Time Settings
+Click **Next > Time**
+- **Date Offset**: `180 days`  
+- **Minimum Time Granularity**: `Week`  
+- **Time Comparison**: Keep defaults (`Prior Year`, `Prior Period`)
+
+### Goal Settings
+Click **Next > Goals**
+- Skip for now — we’ll set a manual goal later.
+
+### Insights
+Click **Next > Insights**
+- **Value Going Up**: `Favorable`  
+- **Record Identifier**: `Account ID`  
+- **Record Identifier Name**: `Account Name`  
+- **Singular**: `Account`, **Plural**: `Accounts`
+
+Leave other insights settings unchanged.
+
+### Final Steps
+- **Add Yourself** as a follower of the metric.
+- After the metric is created, click the **ellipses (…)** on the metric tile and select **Set Goal**.
+  - Type in: `600,000,000`
+  - Click **Save**
+- Explore your new **Open Pipeline** metric!
+
+<br>
+
+## ⏱️ Average Days to Close Metric
+
+1. Click **New Metric Definition**.
+2. Connect to the same **Sales Cloud Data** source.
+3. Label the metric: **Avg Days to Close**
+
+### Metric Setup
+- **Measure**: `Days to Close`
+  - Change Aggregation to: `Average`
+- **Time Dimension**: `Close Date`
+
+### Definition Filters
+- Filter on `Stage`
+  - **Include only**: `Closed Won`
+
+### Adjustable Metric Filters
+- Account Name  
+- Forecast Category  
+- Opportunity Owner  
+- Account Type  
+- Lead Source  
+
+### Formatting
+- **Number Format**: `Number`  
+- **Singular**: `Day`  
+- **Plural**: `Days`
+
+### Time Settings
+Click **Next > Time**
+- **Date Offset**: `180 days`  
+- **Minimum Time Granularity**: `Week`  
+- **Time Comparison**: Keep defaults
+
+### Goal Settings
+Click **Next > Goals**  
+- Skip
+
+### Insights
+Click **Next > Insights**
+- **Value Going Up**: `Unfavorable`
+- **Turn off** Record Level Insights
+
+Click **Save**, then **Follow the Metric**.  
+Return to the **Pulse Home Page**.
+
+<br>
+
+## 🏆 Win Rate Metric
+
+1. From the Pulse Home Page, click **New Metric**.
+2. Connect to the **Sales Cloud Data** data source.
+3. Title the metric: **Win Rate**
+
+### Advanced Definition Setup
+
+1. Click **Advanced Definition**.
+2. In the Advanced Analytics Editor, create a new calculated field:
+   - **Name**: `Win Rate`
+   - **Formula**:  
+     ```
+     SUM([Opportunities Won]) / COUNTD([Opportunity ID])
+     ```
+   - Click **OK**
+
+3. Drag the `Win Rate` calculated field to the **Measure** box.
+4. Drag `Close Date` to the **Time Dimension** box.
+   - Click the **Month pill** → Select `Month` → Click **Apply**
+
+### Adjustable Metric Filters
+- Opportunity Owner  
+- Industry  
+- Lead Source  
+
+### Formatting
+- **Number Format**: `Percentage`
+
+Click **Next**
+
+### Time Settings
+- **Date Offset**: `180 days`  
+- **Minimum Time Granularity**: `Week`
+
+Click **Next**
+
+### Insights
+- **Value Going Up**: `Favorable`
+- **Turn Off** Record Level Outliers
+
+Click **Save**, then **Follow the Metric**.
+
+<br>
+
+✅ After completing this step, you’ll have three active Pulse Metrics:
+- **Open Pipeline**
+- **Avg Days to Close**
+- **Win Rate**
+
+You’re now ready to move on to building visualizations powered by Tableau Agent!
+
+---
+
+
+
+
