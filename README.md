@@ -59,3 +59,56 @@ In the **incognito window**, go to:
 
 
 ✅ **You're all set!** You now have a fully functional Tableau Cloud trial site ready to explore and use.
+
+---
+
+# Step 2: Upload a Data Source to Tableau Cloud (Bailey)
+
+## 1. Download the Sample CSV File
+
+1. Go to the GitHub repository containing the data file.
+2. Locate the file named:  
+   **`Sales Cloud Data.csv`**
+
+3. Click on the file to view it.
+4. Click the **Download** button (or right-click **"Raw"** and select **Save As**) to save it to your computer.
+
+> 💾 Make sure to remember where you saved the file (e.g., your `Downloads` folder).
+
+---
+
+## 2. Log Into Tableau Cloud
+
+1. In your browser, go to your Tableau Cloud site URL (e.g., `https://<your-site-name>.tableau.com`).
+2. Sign in with your username and password.
+
+---
+
+## 3. Upload the Data Source from the Home Page
+
+1. From the **Home** screen, locate the **"New"** button in the upper section of the page.
+2. Click the **New** drop-down and select:  
+   **📊 Published Data Source**
+
+   ![Published Data Source Upload](Screenshot%202025-03-31%20at%207.56.00%E2%80%AFPM.png)
+
+3. In the file picker window:
+   - Browse to the location where you saved the `Sales Cloud Data.csv` file.
+   - Select the file and click **Open** (or **Upload**).
+
+4. Tableau Cloud will upload the CSV file and turn it into a **published data source**.
+
+> ⏱️ Upload and processing may take a few seconds depending on your file size.
+
+---
+
+## 4. Confirm the Upload
+
+1. After the upload is complete, you’ll be directed to a screen showing a preview of the data source.
+2. You can now create new workbooks using this uploaded data directly in Tableau Cloud.
+
+---
+
+✅ **Nice work!** You’ve uploaded your CSV file as a published data source using Tableau Cloud — all through the web browser, no Desktop required.
+
+
