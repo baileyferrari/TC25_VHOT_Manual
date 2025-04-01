@@ -22,21 +22,37 @@
 
 > ⚠️ We'll use the **incognito window** for all Tableau setup and access going forward. This ensures we avoid saved sessions or conflicts from existing Tableau accounts.
 
----
+<br>
 
 ## 2. Set Up Tabs in the Incognito Window
 
-1. In your **incognito window**, open the following two tabs:
+In your **incognito window**, open the following two tabs:
 
-   - **Tab 1**: Open the lab manual to follow along with this walkthrough:  
-     👉 [TC25 Lab Manual - Sections](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#sections)
+- **Tab 1**: Open the **GitHub repository** for this lab:  
+  👉 [TC25 Lab Repository](https://github.com/baileyferrari/TC25_VHOT_Manual)
 
-   - **Tab 2**: Open the Tableau Cloud Trial signup page:  
-     👉 [Start Tableau Cloud Free Trial](https://www.tableau.com/products/trial)
+  > This repo contains everything you'll need for the session, including:
+  > - The full **lab manual** to follow along step-by-step
+  > - A **CSV data source** file that we’ll upload into Tableau Cloud later
 
----
+- **Tab 2**: Open the Tableau Cloud Trial signup page:  
+  👉 [Start Tableau Cloud Free Trial](https://www.tableau.com/products/trial)
 
-## 3. Fill Out the Trial Signup Form
+<br>
+
+## 3. Set Up Your Standard Window
+
+In your **standard (non-incognito)** browser window:
+
+- Make sure you are **signed into your email account** (e.g., Gmail, Outlook, or your Salesforce email).
+- You only need **one tab open** in this window.
+- This is the inbox where you’ll receive the **Tableau Software Account Activation** email.
+
+> 💡 Keep this window open — you’ll switch to it briefly during the activation step.
+
+<br>
+
+## 4. Fill Out the Trial Signup Form
 
 On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete the form with the following details:
 
@@ -52,9 +68,9 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 ✅ Check the box to agree to the terms, then click **Start Free Trial**.
 
----
+<br>
 
-## 4. Activate Your Tableau Account (Important!)
+## 5. Activate Your Tableau Account (Important!)
 
 1. In your **standard browser window** (signed into your email), look for an email with the subject:  
    **`Tableau Software Account Activation`**
@@ -69,9 +85,9 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 > 🛠️ **Why this step matters:**  
 > Opening the activation link in incognito prevents Tableau from auto-redirecting you to an existing site. This ensures you're creating a brand-new Tableau Cloud trial site — even if you're part of a paid org or have requested a trial before.
 
----
+<br>
 
-## 5. Set Your Password & Finish Setup
+## 6. Set Your Password & Finish Setup
 
 1. Once you open the activation link in the incognito window, Tableau will recognize your email and display your username.
 2. You’ll be prompted to **set a password**.
@@ -84,69 +100,130 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 3. Click **Submit**. Tableau will begin provisioning your site.
 
----
+<br>
 
-## 6. Wait for Trial Activation
+## 7. Wait for Trial Activation
 
 - You’ll see a message that says:  
   **“Activating your trial site...”**
 - This process takes **1–2 minutes**.
 - When finished, you’ll be automatically redirected to your new **Tableau Cloud site homepage**.
 
----
+<br>
 
-✅ **Done!** You’ve successfully created your Tableau Cloud trial site. We’ll use this site throughout the rest of the lab.
+✅ **Done!** You’ve successfully created your Tableau Cloud trial site. We’ll use this site throughout the rest of the lab, be sure to keep this tab open!
 
-
----
-
-# Step 2: Upload a Data Source to Tableau Cloud (Bailey)
-
-## 1. Download the Sample CSV File
-
-1. Go to the GitHub repository containing the data file.
-2. Locate the file named:  
-   **`Sales Cloud Data.csv`**
-
-3. Click on the file to view it.
-4. Click the **Download** button (or right-click **"Raw"** and select **Save As**) to save it to your computer.
-
-> 💾 Make sure to remember where you saved the file (e.g., your `Downloads` folder).
+<br>
 
 ---
 
-## 2. Log Into Tableau Cloud
+# Step 2: Configure Your Tableau Cloud Site
 
-1. In your browser, go to your Tableau Cloud site URL (e.g., `https://<your-site-name>.tableau.com`).
-2. Sign in with your username and password.
+Now that your trial site is activated, let’s configure it to unlock powerful AI and agentic capabilities we’ll be using throughout the lab.
+
+<br>
+
+## 1. Open Site Settings
+
+1. From the **Home** page of your Tableau Cloud site, scroll to the very bottom of the left-hand navigation.
+2. Click **Settings**.
+
+<br>
+
+## 2. Enable AI Features (General Tab)
+
+1. The **Settings** page will default to the **General** tab.
+2. Under the section titled **“Turn on AI in Tableau by feature area”**, **check every checkbox** that appears — these enable:
+   - Tableau Pulse summaries
+   - Semantic question matching
+   - Pulse Discover
+   - Conversational Web Authoring
+   - Tableau Prep suggestions
+
+3. Your screen should look like this:
+
+   ![Enable AI Features](Screenshot%202025-03-31%20at%208.57.03%E2%80%AFPM.png)
+
+4. Click the **blue "Save"** button in the upper right corner of the screen to apply these settings.
+
+<br>
+
+## 3. Add Viz Extension URL (Extensions Tab)
+
+We’re going to enable a powerful new capability called **viz extensions**, which makes it easier to build granular, dynamic visualizations like detailed text tables.
+
+1. While still in **Settings**, click on the **“Extensions”** tab at the top.
+2. Under **"Enable Specific Extensions"**, do the following:
+   - Click the **`+ Add URL`** button.
+   - Paste the following URL in the **Extension URL** field:  
+     ```
+     https://tableau-vizext-prod.s3.us-east-2.amazonaws.com/table-network/table.html
+     ```
+   - Under **Full Data Access**, change the dropdown to **Allow**.
+   - Under **User Prompts**, change the dropdown to **Hide**.
+
+3. Your configuration should look like this:
+
+   ![Viz Extension Settings](Screenshot%202025-03-31%20at%208.57.16%E2%80%AFPM.png)
+
+4. Click the **blue "Save"** button in the upper right to apply the changes.
+
+<br>
+
+✅ **Nice job!** Your Tableau Cloud site is now fully configured for AI-driven insights and advanced reporting with viz extensions.
+
+<br>
 
 ---
 
-## 3. Upload the Data Source from the Home Page
+# Step 4: Upload "Sales Cloud Data" as a Published Data Source
 
-1. From the **Home** screen, locate the **"New"** button in the upper section of the page.
-2. Click the **New** drop-down and select:  
-   **📊 Published Data Source**
+Next, we’ll upload the **Sales Cloud Data** file into Tableau Cloud to use in our exercises. This process creates a **Published Data Source** directly from the browser — no Tableau Desktop required.
 
-   ![Published Data Source Upload](Screenshot%202025-03-31%20at%207.56.00%E2%80%AFPM.png)
+## 1. Download the CSV File
 
-3. In the file picker window:
-   - Browse to the location where you saved the `Sales Cloud Data.csv` file.
-   - Select the file and click **Open** (or **Upload**).
+In **Tab 1** of your incognito window (where the GitHub repo is open), locate and download:  
+**`Sales Cloud Data.csv`**
 
-4. Tableau Cloud will upload the CSV file and turn it into a **published data source**.
+> 💾 Save this file somewhere easy to find, like your **Downloads** folder.
 
-> ⏱️ Upload and processing may take a few seconds depending on your file size.
+<br>
+
+## 2. Start the Upload Process
+
+Go back to your Tableau Cloud **Home** page.  
+Click the **“New”** drop-down menu at the top.  
+Select **“Published Data Source”** from the list.
+
+<br>
+
+## 3. Connect to the CSV File
+
+In the **Connect to Data** window that opens:  
+Toggle to the **"Files"** tab at the top.  
+Click to **browse for a file** and select the `Sales Cloud Data.csv` file you downloaded.
+
+<br>
+
+## 4. Publish the Data Source
+
+Once the data loads, click **“Publish As...”** in the top-right corner.  
+In the popup window:
+- Name the data source: **`Sales Cloud Data`**
+- Keep the default project folder selected.
+
+Click **Publish**.
+
+<br>
+
+## 5. Finish & Return to Home
+
+If you see a success message, acknowledge or close any pop-ups.  
+In the upper left corner, click **“File”** → **“Close”** to return to your Tableau Cloud **Home** page.
+
+✅ **Success!** You’ve now uploaded and published your first data source to Tableau Cloud. You’ll use this dataset in the next steps of the lab.
+
+<br>
 
 ---
-
-## 4. Confirm the Upload
-
-1. After the upload is complete, you’ll be directed to a screen showing a preview of the data source.
-2. You can now create new workbooks using this uploaded data directly in Tableau Cloud.
-
----
-
-✅ **Nice work!** You’ve uploaded your CSV file as a published data source using Tableau Cloud — all through the web browser, no Desktop required.
-
 
