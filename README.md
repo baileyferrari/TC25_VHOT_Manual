@@ -249,43 +249,57 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
 
 ---
 
-## 📈 Open Pipeline Metric
+## 1. Open Pipeline Metric
 
 1. From the left-hand navigation, click **Pulse**.
 2. Click **New Metric Definition**.
 3. Search for and connect to your **Sales Cloud Data** published data source.
 4. Label the metric: **Open Pipeline**
 
-### Metric Setup
+<br>
+
+## 2. Metric Setup
 - **Measure**: `Amount`
   - Keep Aggregation as default: `Sum`, `Running Total`
 - **Time Dimension**: `Close Date`
 
-### Definition Filters
+<br>
+
+## 3. Add Definition Filters
 - Filter on `Stage`
   - **Exclude**: `Closed Lost`, `Closed Won`
 
-### Adjustable Metric Filters
+<br>
+
+## 4. Adjustable Metric Filters
 - Account Name  
 - Account Type  
 - Opportunity Owner  
 - Stage  
 - Forecast Category  
 
-### Formatting
+<br>
+
+## 5. Formatting
 - **Number Format**: Currency (`USD`)
 
-### Time Settings
+<br>
+
+## 6. Time Settings
 Click **Next > Time**
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`  
 - **Time Comparison**: Keep defaults (`Prior Year`, `Prior Period`)
 
-### Goal Settings
+<br>
+
+## 7. Goal Settings
 Click **Next > Goals**
 - Skip for now — we’ll set a manual goal later.
 
-### Insights
+<br>
+
+## 8. Add Insights
 Click **Next > Insights**
 - **Value Going Up**: `Favorable`  
 - **Record Identifier**: `Account ID`  
@@ -294,7 +308,7 @@ Click **Next > Insights**
 
 Leave other insights settings unchanged.
 
-### Final Steps
+## 9. Final Steps
 - **Add Yourself** as a follower of the metric.
 - After the metric is created, click the **ellipses (…)** on the metric tile and select **Set Goal**.
   - Type in: `600,000,000`
@@ -403,6 +417,110 @@ Click **Save**, then **Follow the Metric**.
 You’re now ready to move on to building visualizations powered by Tableau Agent!
 
 ---
+
+# Step 5: Create Visualizations with Tableau Agent
+
+In this step, you'll use Tableau Agent to build three key visualizations based on your uploaded "Sales Cloud Data" source.
+
+---
+
+## 1. Navigate to the Home Page from Pulse
+
+- Click the **Tableau** logo or select **Home** from the left-hand navigation to return to the Home page.
+
+---
+
+## 2. Access the Sales Cloud Data Source
+
+- Click the **Explore** tab in the left-hand sidebar.
+- Navigate to the **Default** project.
+- Locate the **Sales Cloud Data** published data source.
+- Click the **New** dropdown and select **Workbook Using This Data Source**.
+
+---
+
+## 3. Engage with Tableau Agent
+
+- Click the **Agentforce** logo in the top-left to launch Tableau Agent.
+- Click the blue **"Got it"** button to enter the conversational experience.
+
+---
+
+## 4. Create the "Top Reps" Visualization
+
+1. In Tableau Agent, type:  
+   **`amount by owner`**  
+   → A horizontal bar chart will appear showing total amount by opportunity owner.
+
+2. Click **Show Me** in the top-right and select the **Treemap** chart type.
+
+3. Add a label for distinct opportunities:
+   - Locate **Opportunity ID** in the Data pane.
+   - Right-click (or Command-click on Mac) and **drag** it onto the **Marks card > Label**.
+   - In the dialog, choose **CNTD(Opportunity ID)**.
+
+4. Rename the worksheet:
+   - Click the sheet tab at the bottom.
+   - Rename it to **Top Reps**.
+
+---
+
+## 5. Create the "Top Open Opps" Visualization
+
+1. Open a **new worksheet**.
+
+2. Open Tableau Agent and type:  
+   **`Show opportunity name by amount`**
+
+3. Filter the data:
+   - Type: **`Exclude closed won and closed lost opportunities`**
+   - Then: **`Filter to top 10 accounts by amount`**
+   - Then: **`Add stage to color`**
+
+---
+
+## 6. Create the "Opportunity Details" Table
+
+1. Open a **new worksheet**.
+
+2. In the **Marks card**, open the dropdown (currently set to "Automatic").
+
+3. Scroll to **Viz Extensions** > click **Add Extension**.
+
+4. In the popup, select **Tableau Table** and add it to your worksheet.
+
+5. Add dimensions to the table:
+   - Multi-select (Ctrl on Windows / Cmd on Mac):
+     - `Account Name`
+     - `Opportunity Name`
+     - `Stage`
+     - `Opportunity Owner`
+   - Drag onto **Details** on the Marks card.
+
+6. Add measures to the table:
+   - Multi-select:
+     - `Amount`
+     - `Probability`
+     - `Days in Stage`
+   - Drag onto **Details** on the Marks card.
+
+7. Format **Days in Stage**:
+   - Click the dropdown on `SUM(Days in Stage)` > **Format**.
+   - Add conditional formatting to highlight values **greater than 15 days**.
+
+8. Format **Probability**:
+   - Click the dropdown on the `Probability` field.
+   - In the **Formatting** window under **Body Formatting**, change the **Formatting Type** to **Data Bars**.
+
+<br>
+
+✅ You now have three visualizations ready:
+- **Top Reps** – Treemap with opportunity count
+- **Top Open Opps** – Filtered bar chart showing key accounts
+- **Opportunity Details** – Granular table built using Viz Extensions
+
+Next up: bring it all together in a dashboard!
+
 
 
 
