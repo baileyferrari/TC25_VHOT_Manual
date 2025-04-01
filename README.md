@@ -1,22 +1,22 @@
 # TC25_VHOT_Manual
 ## Lab Sections
-- [Step 1: Create a Tableau Cloud Trial Site](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-1-create-a-tableau-cloud-trial-site-bailey)
+- **[Step 1: Create a Tableau Cloud Trial Site](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-1-create-a-tableau-cloud-trial-site-bailey)**
 
-- **Step 2: Configure Your Tableau Cloud Site**
+- **[Step 2: Configure Your Tableau Cloud Site**](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
 
-- **Step 3: Upload "Sales Cloud Data" as a Published Data Source**
+- **[Step 3: Upload "Sales Cloud Data" as a Published Data Source](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
 
-- **Step 4: Create Pulse Metrics**
+- **[Step 4: Create Pulse Metrics](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
   - Open Pipe  
   - Win Rate  
   - Average Days to Close
 
-- **Step 5: Create Visualizations with Tableau Agent**
+- **[Step 5: Create Visualizations with Tableau Agent](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
   - Top Accounts  
   - Top Sellers  
   - Opportunity Details
 
-- **Step 6: Pull Everything Together into a Dashboard!**
+- **Step 6: Pull Your Visualizations into Dashboards**
   - Sales Overview
 
 - **Step 7: Publish & Interact**
