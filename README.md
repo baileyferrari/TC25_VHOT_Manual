@@ -8,65 +8,95 @@
 
 ---
 
-## Step 1: Create a Tableau Cloud Trial Site (Bailey)
+# Step 1: Create a Tableau Cloud Trial Site (Bailey)
 
-### 1. Set Up Your Browser Windows
+## 1. Set Up Your Browser Windows
 
 1. Open your preferred web browser (e.g., Chrome, Edge, Firefox).
 2. Open **two windows side-by-side**:
-   - **Window 1 (Standard)**: This should be your **regular browser window**, already signed into your **preferred email account** (e.g., Gmail, Outlook, Salesforce email).
-   - **Window 2 (Incognito/Private Mode)**: Open a **new incognito or private browsing window**:
-     - In Chrome: Press `Ctrl+Shift+N` (Windows) or `Cmd+Shift+N` (Mac)
-     - In Edge: Press `Ctrl+Shift+N`
-     - In Firefox: Press `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (Mac)
+   - **Window 1 (Standard)**: Your regular browser window, already signed into your preferred email account (e.g., Gmail, Outlook, Salesforce email).
+   - **Window 2 (Incognito/Private Mode)**: Open a new incognito/private window:
+     - In Chrome: `Ctrl+Shift+N` (Windows) or `Cmd+Shift+N` (Mac)
+     - In Edge: `Ctrl+Shift+N`
+     - In Firefox: `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (Mac)
 
-> **Why?** Using incognito mode ensures the Tableau trial sign-up process doesn’t auto-login using any saved credentials.
+> ⚠️ We'll use the **incognito window** for all Tableau setup and access going forward. This ensures we avoid saved sessions or conflicts from existing Tableau accounts.
 
+---
 
-### 2. Navigate to the Tableau Cloud Trial Page
+## 2. Set Up Tabs in the Incognito Window
 
-In the **incognito window**, go to:
+1. In your **incognito window**, open the following two tabs:
 
-👉 [https://www.tableau.com/products/trial](https://www.tableau.com/products/trial)
+   - **Tab 1**: Open the lab manual to follow along with this walkthrough:  
+     👉 [TC25 Lab Manual - Sections](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#sections)
 
+   - **Tab 2**: Open the Tableau Cloud Trial signup page:  
+     👉 [Start Tableau Cloud Free Trial](https://www.tableau.com/products/trial)
 
-### 3. Fill Out the Trial Form
+---
 
-1. Complete the sign-up form with your details:
-   - **First Name**
-   - **Last Name**
-   - **Company Name** – The name of your organization.
-   - **Email** – Enter your preferred email address with a small modification:
-     - Append `+TC25` just before the `@` symbol:
-       - Example:  
-         `john.doe+TC25@salesforce.com`  
-         `tsmith+TC25@gmail.com`
-   - **Phone Number** – Your preferred phone number.
-   - **Job Role / Department / Country** – Fill these out as applicable.
+## 3. Fill Out the Trial Signup Form
 
-2. Agree to the terms and click **Start Free Trial** (or the corresponding button).
+On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete the form with the following details:
 
+- **First Name**
+- **Last Name**
+- **Company Name** – Your organization or a placeholder.
+- **Email** – Use your preferred email address, but **append `+TC25` just before the `@` symbol**:
+  - Example:
+    - `john.doe+TC25@salesforce.com`
+    - `tsmith+TC25@gmail.com`
+- **Phone Number** – Optional but can be filled in.
+- **Job Role / Department / Country** – Select as appropriate.
 
-### 4. Confirm Your Email
+✅ Check the box to agree to the terms, then click **Start Free Trial**.
 
-1. In your **standard browser window** (the one already signed in to your email):
-   - Open your inbox and look for the confirmation email from Tableau (or Salesforce).
-   - If you don’t see it right away, check the **Spam**, **Promotions**, or **Updates** folders.
+---
 
-2. Click the **confirmation link** provided in the email to activate your trial.
+## 4. Activate Your Tableau Account (Important!)
 
+1. In your **standard browser window** (signed into your email), look for an email with the subject:  
+   **`Tableau Software Account Activation`**
 
-### 5. Set Up Your Tableau Cloud Site
+2. **DO NOT click the link directly in the email.** Instead:
 
-1. After clicking the confirmation link, you'll be taken to a site setup screen.
-2. Choose the following:
-   - **Site name** (this becomes part of your Tableau Cloud URL)
-   - **Username and password**
+   - **Right-click** the button or link in the email.
+   - Select **"Copy link address"** (or similar, depending on your email provider).
+   - Switch to your **incognito window** and open a **new tab**.
+   - **Paste** the copied link into the address bar and hit **Enter**.
 
-3. Submit the form. Your Tableau Cloud trial environment will be provisioned — this usually takes 1–2 minutes.
+> 🛠️ **Why this step matters:**  
+> Opening the activation link in incognito prevents Tableau from auto-redirecting you to an existing site. This ensures you're creating a brand-new Tableau Cloud trial site — even if you're part of a paid org or have requested a trial before.
 
+---
 
-✅ **You're all set!** You now have a fully functional Tableau Cloud trial site ready to explore and use.
+## 5. Set Your Password & Finish Setup
+
+1. Once you open the activation link in the incognito window, Tableau will recognize your email and display your username.
+2. You’ll be prompted to **set a password**.
+
+   - It must meet Tableau’s password criteria.
+   - For this exercise, we are using:  
+     **`DataRockstar1!`**
+
+   > You may choose your own secure password if you'd like — this is just for simplicity during the lab.
+
+3. Click **Submit**. Tableau will begin provisioning your site.
+
+---
+
+## 6. Wait for Trial Activation
+
+- You’ll see a message that says:  
+  **“Activating your trial site...”**
+- This process takes **1–2 minutes**.
+- When finished, you’ll be automatically redirected to your new **Tableau Cloud site homepage**.
+
+---
+
+✅ **Done!** You’ve successfully created your Tableau Cloud trial site. We’ll use this site throughout the rest of the lab.
+
 
 ---
 
