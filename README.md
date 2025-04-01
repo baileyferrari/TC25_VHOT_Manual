@@ -1,5 +1,12 @@
 # TC25_VHOT_Manual
-### Create a Tableau Cloud Trial
+## Sections
+#### Step 1: Create a Tableau Cloud Trial Site
+#### Step 2: Upload the "Sales Cloud Data" Data Source
+#### Step 3: Create Your First Pulse Metrics
+#### Step 4: Build a Tableau Dashboard
+
+---
+
 ## Step 1: Create a Tableau Cloud Trial Site (Bailey)
 
 ### 1. Set Up Your Browser Windows
