@@ -1,10 +1,26 @@
 # TC25_VHOT_Manual
-## Sections
-[Step 1: Create a Tableau Cloud Trial Site](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-1-create-a-tableau-cloud-trial-site-bailey)
+## Lab Sections
+- [Step 1: Create a Tableau Cloud Trial Site](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-1-create-a-tableau-cloud-trial-site-bailey)
 
-#### Step 2: Upload the "Sales Cloud Data" Data Source
-#### Step 3: Create Your First Pulse Metrics
-#### Step 4: Build a Tableau Dashboard
+- **Step 2: Configure Your Tableau Cloud Site**
+
+- **Step 3: Upload "Sales Cloud Data" as a Published Data Source**
+
+- **Step 4: Create Pulse Metrics**
+  - Open Pipe  
+  - Win Rate  
+  - Average Days to Close
+
+- **Step 5: Create Visualizations with Tableau Agent**
+  - Top Accounts  
+  - Top Sellers  
+  - Opportunity Details
+
+- **Step 6: Pull Everything Together into a Dashboard!**
+  - Sales Overview
+
+- **Step 7: Publish & Interact**
+
 
 ---
 
@@ -176,7 +192,7 @@ We’re going to enable a powerful new capability called **viz extensions**, whi
 
 ---
 
-# Step 4: Upload "Sales Cloud Data" as a Published Data Source
+# Step 3: Upload "Sales Cloud Data" as a Published Data Source
 
 Next, we’ll upload the **Sales Cloud Data** file into Tableau Cloud to use in our exercises. This process creates a **Published Data Source** directly from the browser — no Tableau Desktop required.
 
