@@ -30,7 +30,7 @@
 
 1. Open your preferred web browser (e.g., Chrome, Edge, Firefox).
 2. Open **two windows side-by-side**:
-   - **Window 1 (Standard)**: Your regular browser window, already signed into your preferred email account (e.g., Gmail, Outlook, Salesforce email).
+   - **Window 1 (Standard)**: Your regular browser window, already signed into your preferred email account (e.g., Gmail, Outlook email).
    - **Window 2 (Incognito/Private Mode)**: Open a new incognito/private window:
      - In Chrome: `Ctrl+Shift+N` (Windows) or `Cmd+Shift+N` (Mac)
      - In Edge: `Ctrl+Shift+N`
