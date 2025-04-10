@@ -11,12 +11,11 @@
   - Win Rate  
   - Average Days to Close
 
-- **[Step 5: Create Visualizations](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
+- **[Step 5: Create Advanced Visualizations](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
   - Top Accounts  
   - Top Sellers  
-  - Opportunity Details
 
-- **Step 6: Pull Your Visualizations into Dashboards**
+- **Step 6: Pull Your Metrics & Visualizations into a Dashboard**
   - Sales Overview
 
 - **Step 7: Publish & Interact**
@@ -390,7 +389,7 @@ Return to the **Pulse Home Page**.
 
 3. Drag the `Win Rate` calculated field to the **Measure** box.
 4. Drag `Close Date` to the **Time Dimension** box.
-   - Click the **Month pill** → Select `Month` → Click **Apply**
+   - Click into the drop-down of the **YEAR(Close Date)** field → Select `Month` → Click **Apply**
   
 <br>
 
@@ -429,17 +428,259 @@ Click **Save**, then **Follow the Metric**.
 - **Avg Days to Close**
 - **Win Rate**
 
-You’re now ready to move on to building visualizations powered by Tableau Agent!
+You’re now ready to move on to building visualizations!
 
 ---
 
-# Step 5: Create Visualizations with Tableau Agent
+# Step 5: Create Advanced Visualizations
+
+### 🔹 Visualization 1: Open Pipeline by Sales Rep
+
+Let’s build a visualization to show open pipeline by sales rep.
+
+<br>
+
+#### 1. Set up your basic bar chart:
+- In the **Data pane** on the left, drag **`Amount`** onto the **Columns** shelf.
+- Drag **`Opportunity Owner`** onto the **Rows** shelf.
+
+You should now see a horizontal bar chart showing the total opportunity amount each sales rep has ever owned.
+
+<br>
+
+#### 2. Add filters to narrow the data:
+- Drag **`Stage`** onto the **Filters** shelf:
+  - In the filter pop-up, check **`Closed Lost`** and **`Closed Won`**
+  - Click **“Exclude selected values”**
+  - Hit the blue **OK** button
+  - To apply this filter to all future visualizations:
+    - Click the dropdown on the Stage filter pill > **Apply to Worksheets** > **All Using This Data Source**
+
+<br>
+
+- Drag **`Close Date`** onto the Filters shelf:
+  - In the pop-up, choose **Relative Date** > click **Next**
+  - Change the dropdown from “Days” to **Years**
+  - Keep the default **“This year”** selection
+  - Click **OK**
+  - Apply this filter to all future visualizations:
+    - Click the dropdown on the Close Date filter pill > **Apply to Worksheets** > **All Using This Data Source**
+
+<br>
+
+#### 3. Change the visualization type:
+- Click the **Show Me** tab in the top right
+- Select the **Treemap** chart type
+
+<br>
+
+#### 4. Add context with a label:
+- Find **`Opportunity ID`** in the Data pane
+- On **Mac**: hold **Option** and drag `Opportunity ID` to the **Label** section on the **Marks card**
+- On **Windows**: hold **Ctrl** and drag `Opportunity ID` to **Label**
+- In the dialog that appears, choose **CNTD(Opportunity ID)** and click **OK**
+
+This will now show the **amount** represented by **size**, and the **number of opportunities** per rep as a label.
+
+<br>
+
+#### 5. Rename your worksheet:
+- Double-click the sheet tab and rename it:  
+  **`Amount by Rep`**
+  
+<br>
+---
+
+### 🔹 Visualization 2: Top 10 Accounts by Stage
+
+Next, we’ll create a more detailed view of opportunity amount by account name.
+
+#### 1. Build the base chart:
+- Drag **`Amount`** to the **Columns** shelf
+- Drag **`Account Name`** to the **Rows** shelf
+- Click the **Sort** icon in the toolbar to sort account names by value
+
+<br>
+
+#### 2. Filter to the top 10 accounts:
+- Drag **`Account Name`** to the **Filters** shelf
+- In the filter dialog, go to the **Top** tab
+  - Choose **By Field**
+  - Set:
+    - **Top**: leave as-is
+    - **Count**: `10`
+    - **Field**: `Amount`
+    - **Aggregation**: `Sum`
+  - Click **OK**
+
+<br>
+
+#### 3. Add color by stage:
+- Drag **`Stage`** to the **Color** section of the **Marks** card
+
+<br>
+
+#### 4. Make it color-blind friendly:
+- Click on the **Color** legend in the Marks card
+- In the **Edit Colors** window:
+  - Change the palette to **Color Blind**
+  - Click **Assign Palette**
+  - Then click **OK**
+
+<br>
+
+#### 5. Rename your worksheet:
+- Double-click the sheet tab and rename it:  
+  **`Accounts by Stage`**
+
+<br>
+
+# Step 6: Pull Your Metrics & Visualizations into a Dashboard
+
+Now that we've created visualizations and Pulse metrics, it's time to combine them into a single, interactive dashboard.
+
+### 🔧 Create the Dashboard
+
+1. **Open a new dashboard**:
+   - Click the **Dashboard icon** at the bottom of the screen (next to your worksheet tabs).
+
+<br>
+
+2. **Rename the dashboard**:
+   - Double-click where it says **"Dashboard 1"**
+   - Rename it: **`Sales Overview`**
+
+<br>
+
+3. **Adjust dashboard sizing**:
+   - In the **Dashboard pane** on the left, change the **Size** dropdown to `Automatic`.
+   - _(Optional but recommended)_ After adjusting to Automatic, consider switching to **Fixed** for a more consistent and performant layout.
+
+<br>
+
+### 🧱 Build the Layout with Containers
+
+1. In the **Objects** section of the **Dashboard pane**, drag out **two Horizontal containers**:
+   - Place the **first container** to take up the full width of the dashboard (upper half).
+   - Drop the **second container** just below it (lower half of the dashboard).
+  
+<br>
+
+### 📊 Add Pulse Metrics to the Top Container
+
+1. In the **Objects** pane, find **Pulse Metric**.
+<br>
+2. Drag in each of your three metrics to the **top container**:
+   - **Open Pipeline**
+     - Select the **"Quarter to Date"** card
+     - Keep all defaults, click **Add to Dashboard**
+   - **Avg Days to Close**
+     - Select **Quarter to Date** > Add to Dashboard
+   - **Win Rate**
+     - Select **Quarter to Date** > Add to Dashboard
+<br>
+3. Once all three are added, double-click the **gray hamburger menu** at the top of the container.
+   - In the **blue dropdown menu**, select **Distribute Contents Evenly**
+
+<br>
+
+### 📈 Add Visualizations to the Bottom Container
+
+1. In the **Sheets** pane, drag **`Amount by Rep`** into the **bottom horizontal container** (left side).
+   - A legend may appear on the right—don’t worry, we’ll remove it later.
+<br>
+2. Drag **`Accounts by Stage`** into the **right side** of the same container.
+<br>
+3. Remove the legends:
+   - Click the vertical section containing the legends
+   - Click the blue **X** in the upper-left of that container to delete it
+
+<br>
+
+### 🎨 Format the Dashboard
+
+1. **Show the dashboard title**:
+   - In the top menu, go to **Dashboard** > **Show Title**
+<br>
+2. **Distribute visualizations evenly**:
+   - Click into either viz, then double-click the **gray hamburger menu**
+   - In the **blue dropdown**, select **Distribute Contents Evenly**
+<br>
+3. **Fit both visualizations to screen**:
+   - Click into **Amount by Rep**, use the dropdown to set **Fit** to **Entire View**
+   - Repeat for **Accounts by Stage**
+
+<br>
+
+### 🔄 Add Filter Action (Interactivity)
+
+1. In **Amount by Rep**, click the **filter icon** on the viz toolbar to enable interactivity.
+   - Try clicking on **John Demby** in the treemap — you’ll see the other viz filter by rep.
+<br>
+2. Uh oh! Only a few accounts appear — not the top 10. Why?
+   - By default, Tableau is showing the top 10 **overall**, not per rep.
+   - To fix this, we’ll **add the filter to context**.
+
+<br>
+
+### ❓ What’s a Context Filter?
+
+A **context filter** tells Tableau to apply one filter *before* calculating another. This ensures that our **"Top 10 Accounts"** is calculated **per sales rep**, not globally.
+
+<br>
+
+### 🛠️ Fix the Filter with Context
+
+1. In the dashboard, click into the **Accounts by Stage** worksheet (via the icon beneath the "X" in its corner).
+2. In the **Filters** shelf, find **`Action (Opportunity Owner)`**
+3. Click its dropdown > select **Add to Context**
+
+<br>
+
+### ✅ Publish the Dashboard
+
+1. From the **Accounts by Stage** worksheet, click the light blue **Publish As…** button in the top-right.
+2. Name your workbook: **`Sales Overview`**
+
+<br>
+---
+
+# Step 7: Publish & Interact
+
+Now that it's published, let's try it out!
+
+1. In the green banner at the top of the screen, click **Go to Workbook**
+2. Click to open the **Sales Overview** dashboard.
+
+3. Try it out!
+   - Click the **“John Demby”** rectangle in the treemap.
+   - Watch the bottom chart update to show **John’s top 10 accounts**.
+   - Hover over the stacked bars — you’ll see insights like:
+     - “John has over $4.5M with Displaytech in the Qualification stage.”
+
+<br>
+
+### ⏸️ PAUSE: Tableau Agent Demo
+
+We’re pausing here for a live walkthrough of Tableau Agent.
+
+If you're following along later or exploring on your own:
+
+- Continue to the next section of this lab manual for **starter prompts** using this same dataset.
+- You’re also welcome to use your **own prompts** or **upload new data**.
+- This trial site is **completely secure** and **only accessible to you** (or others you explicitly invite).
+
+<br>
+
+---
+
+# OPTIONAL / SELF-PACED - Step 8: Create Visualizations with Tableau Agent
 
 In this step, you'll use Tableau Agent to build three key visualizations based on your uploaded "Sales Cloud Data" source.
 
 ---
 
-## 1. Navigate to the Home Page from Pulse
+## 1. Navigate to the Home Page
 
 - Click the **Tableau** logo or select **Home** from the left-hand navigation to return to the Home page.
 
@@ -494,47 +735,12 @@ In this step, you'll use Tableau Agent to build three key visualizations based o
 
 ---
 
-## 6. Create the "Opportunity Details" Table
-
-1. Open a **new worksheet**.
-
-2. In the **Marks card**, open the dropdown (currently set to "Automatic").
-
-3. Scroll to **Viz Extensions** > click **Add Extension**.
-
-4. In the popup, select **Tableau Table** and add it to your worksheet.
-
-5. Add dimensions to the table:
-   - Multi-select (Ctrl on Windows / Cmd on Mac):
-     - `Account Name`
-     - `Opportunity Name`
-     - `Stage`
-     - `Opportunity Owner`
-   - Drag onto **Details** on the Marks card.
-
-6. Add measures to the table:
-   - Multi-select:
-     - `Amount`
-     - `Probability`
-     - `Days in Stage`
-   - Drag onto **Details** on the Marks card.
-
-7. Format **Days in Stage**:
-   - Click the dropdown on `SUM(Days in Stage)` > **Format**.
-   - Add conditional formatting to highlight values **greater than 15 days**.
-
-8. Format **Probability**:
-   - Click the dropdown on the `Probability` field.
-   - In the **Formatting** window under **Body Formatting**, change the **Formatting Type** to **Data Bars**.
-
 <br>
 
-✅ You now have three visualizations ready:
+✅ You now have two visualizations, all thanks to Tableau Agent!
 - **Top Reps** – Treemap with opportunity count
 - **Top Open Opps** – Filtered bar chart showing key accounts
-- **Opportunity Details** – Granular table built using Viz Extensions
 
-Next up: bring it all together in a dashboard!
 
 
 
