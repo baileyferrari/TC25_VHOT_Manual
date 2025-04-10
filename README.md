@@ -86,7 +86,7 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
   - Example:
     - `john.doe+TC25@salesforce.com`
     - `tsmith+TC25@gmail.com`
-- **Phone Number** – Optional but can be filled in.
+- **Phone Number** – Enter your preferred phone number.
 - **Job Role / Department / Country** – Select as appropriate.
 
 ✅ Check the box to agree to the terms, then click **Start Free Trial**.
@@ -171,29 +171,7 @@ Now that your trial site is activated, let’s configure it to unlock powerful A
 
 <br>
 
-## 3. Add Viz Extension URL (Extensions Tab)
-
-We’re going to enable a powerful new capability called **viz extensions**, which makes it easier to build granular, dynamic visualizations like detailed text tables.
-
-1. While still in **Settings**, click on the **“Extensions”** tab at the top.
-2. Under **"Enable Specific Extensions"**, do the following:
-   - Click the **`+ Add URL`** button.
-   - Paste the following URL in the **Extension URL** field:  
-     ```
-     https://tableau-vizext-prod.s3.us-east-2.amazonaws.com/table-network/table.html
-     ```
-   - Under **Full Data Access**, change the dropdown to **Allow**.
-   - Under **User Prompts**, change the dropdown to **Hide**.
-
-3. Your configuration should look like this:
-
-   ![Viz Extension Settings](Screenshot%202025-03-31%20at%208.57.16%E2%80%AFPM.png)
-
-4. Click the **blue "Save"** button in the upper right to apply the changes.
-
-<br>
-
-✅ **Nice job!** Your Tableau Cloud site is now fully configured for AI-driven insights and advanced reporting with viz extensions.
+✅ **Nice job!** Your Tableau Cloud site is now fully configured for AI-driven insights and advanced reporting!
 
 <br>
 
