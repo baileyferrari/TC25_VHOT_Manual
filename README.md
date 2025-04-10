@@ -11,7 +11,7 @@
   - Win Rate  
   - Average Days to Close
 
-- **[Step 5: Create Visualizations with Tableau Agent](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
+- **[Step 5: Create Visualizations](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
   - Top Accounts  
   - Top Sellers  
   - Opportunity Details
@@ -36,7 +36,14 @@
      - In Edge: `Ctrl+Shift+N`
      - In Firefox: `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (Mac)
 
-> ⚠️ We'll use the **incognito window** for all Tableau setup and access going forward. This ensures we avoid saved sessions or conflicts from existing Tableau accounts.
+> We'll use the **incognito window** for all Tableau setup and access going forward. This ensures we avoid saved sessions or conflicts from existing Tableau accounts.
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img1.png)
+
+</details>
 
 <br>
 
