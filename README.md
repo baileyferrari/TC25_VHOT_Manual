@@ -12,20 +12,21 @@
   - Average Days to Close
 
 - **[Step 5: Create Advanced Visualizations](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
-  - Top Accounts  
-  - Top Sellers  
+  - Open Pipeline by Sales Rep
+  - Accounts by Stage
 
-- **Step 6: Pull Your Metrics & Visualizations into a Dashboard**
+- [**Step 6: Pull Your Metrics & Visualizations into a Dashboard**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-6-pull-your-metrics--visualizations-into-a-dashboard)
   - Sales Overview
 
-- **Step 7: Publish & Interact**
+- [**Step 7: Publish & Interact**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-7-publish--interact)
 
+- [**Step 8 - OPTIONAL / SELF-PACED: Create Visualizations with Tableau Agent**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#optional--self-paced---step-8-create-visualizations-with-tableau-agent)
 
 ---
 
-# Step 1: Create a Tableau Cloud Trial Site
+## Step 1: Create a Tableau Cloud Trial Site
 
-## 1. Set Up Your Browser Windows
+### 1. Set Up Your Browser Windows
 
 1. Open your preferred web browser (e.g., Chrome, Edge, Firefox).
 2. Open **two windows side-by-side**:
@@ -46,7 +47,7 @@
 
 <br>
 
-## 2. Set Up Tabs in the Incognito Window
+### 2. Set Up Tabs in the Incognito Window
 
 In your **incognito window**, open the following two tabs:
 
@@ -62,7 +63,7 @@ In your **incognito window**, open the following two tabs:
 
 <br>
 
-## 3. Set Up Your Standard Window
+### 3. Set Up Your Standard Window
 
 In your **standard (non-incognito)** browser window:
 
@@ -74,7 +75,7 @@ In your **standard (non-incognito)** browser window:
 
 <br>
 
-## 4. Fill Out the Trial Signup Form
+### 4. Fill Out the Trial Signup Form
 
 On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete the form with the following details:
 
@@ -92,7 +93,7 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 <br>
 
-## 5. Activate Your Tableau Account (Important!)
+### 5. Activate Your Tableau Account (Important!)
 
 1. In your **standard browser window** (signed into your email), look for an email with the subject:  
    **`Tableau Software Account Activation`**
@@ -109,7 +110,7 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 <br>
 
-## 6. Set Your Password & Finish Setup
+### 6. Set Your Password & Finish Setup
 
 1. Once you open the activation link in the incognito window, Tableau will recognize your email and display your username.
 2. You’ll be prompted to **set a password**.
@@ -124,7 +125,7 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 <br>
 
-## 7. Wait for Trial Activation
+### 7. Wait for Trial Activation
 
 - You’ll see a message that says:  
   **“Activating your trial site...”**
@@ -139,20 +140,20 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 ---
 
-# Step 2: Configure Your Tableau Cloud Site
+## Step 2: Configure Your Tableau Cloud Site
 
 Now that your trial site is activated, let’s configure it to unlock powerful AI and agentic capabilities we’ll be using throughout the lab.
 
 <br>
 
-## 1. Open Site Settings
+### 1. Open Site Settings
 
 1. From the **Home** page of your Tableau Cloud site, scroll to the very bottom of the left-hand navigation.
 2. Click **Settings**.
 
 <br>
 
-## 2. Enable AI Features (General Tab)
+### 2. Enable AI Features (General Tab)
 
 1. The **Settings** page will default to the **General** tab.
 2. Under the section titled **“Turn on AI in Tableau by feature area”**, **check every checkbox** that appears — these enable:
@@ -176,11 +177,11 @@ Now that your trial site is activated, let’s configure it to unlock powerful A
 
 ---
 
-# Step 3: Upload "Sales Cloud Data" as a Published Data Source
+## Step 3: Upload "Sales Cloud Data" as a Published Data Source
 
 Next, we’ll upload the **Sales Cloud Data** file into Tableau Cloud to use in our exercises. This process creates a **Published Data Source** directly from the browser — no Tableau Desktop required.
 
-## 1. Download the CSV File
+### 1. Download the CSV File
 
 In **Tab 1** of your incognito window (where the GitHub repo is open), locate and download:  
 **`Sales Cloud Data.csv`**
@@ -189,7 +190,7 @@ In **Tab 1** of your incognito window (where the GitHub repo is open), locate an
 
 <br>
 
-## 2. Start the Upload Process
+### 2. Start the Upload Process
 
 Go back to your Tableau Cloud **Home** page.  
 Click the **“New”** drop-down menu at the top.  
@@ -197,7 +198,7 @@ Select **“Published Data Source”** from the list.
 
 <br>
 
-## 3. Connect to the CSV File
+### 3. Connect to the CSV File
 
 In the **Connect to Data** window that opens:  
 Toggle to the **"Files"** tab at the top.  
@@ -205,7 +206,7 @@ Click to **browse for a file** and select the `Sales Cloud Data.csv` file you do
 
 <br>
 
-## 4. Publish the Data Source
+### 4. Publish the Data Source
 
 Once the data loads, click **“Publish As...”** in the top-right corner.  
 In the popup window:
@@ -216,7 +217,7 @@ Click **Publish**.
 
 <br>
 
-## 5. Finish & Return to Home
+### 5. Finish & Return to Home
 
 If you see a success message, acknowledge or close any pop-ups.  
 In the upper left corner, click **“File”** → **“Close”** to return to your Tableau Cloud **Home** page.
@@ -227,7 +228,7 @@ In the upper left corner, click **“File”** → **“Close”** to return to 
 
 ---
 
-# Step 4: Create Pulse Metrics
+## Step 4: Create Pulse Metrics
 
 In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud Data" source you uploaded earlier.
 
@@ -235,7 +236,7 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
 
 ### Open Pipeline Metric
 
-## 1. Create New Metric
+#### 1. Create New Metric
 
 1. From the left-hand navigation, click **Pulse**.
 2. Click **New Metric Definition**.
@@ -244,20 +245,20 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
 
 <br>
 
-## 2. Metric Setup
+#### 2. Metric Setup
 - **Measure**: `Amount`
   - Keep Aggregation as default: `Sum`, `Running Total`
 - **Time Dimension**: `Close Date`
 
 <br>
 
-## 3. Add Definition Filters
+#### 3. Add Definition Filters
 - Filter on `Stage`
   - **Exclude**: `Closed Lost`, `Closed Won`
 
 <br>
 
-## 4. Adjustable Metric Filters
+#### 4. Adjustable Metric Filters
 - Account Name  
 - Account Type  
 - Opportunity Owner  
@@ -266,12 +267,12 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
 
 <br>
 
-## 5. Formatting
+#### 5. Formatting
 - **Number Format**: Currency (`USD`)
 
 <br>
 
-## 6. Time Settings
+#### 6. Time Settings
 Click **Next > Time**
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`  
@@ -279,13 +280,13 @@ Click **Next > Time**
 
 <br>
 
-## 7. Goal Settings
+#### 7. Goal Settings
 Click **Next > Goals**
 - Skip for now — we’ll set a manual goal later.
 
 <br>
 
-## 8. Add Insights
+#### 8. Add Insights
 Click **Next > Insights**
 - **Value Going Up**: `Favorable`  
 - **Record Identifier**: `Account ID`  
@@ -296,7 +297,7 @@ Leave other insights settings unchanged.
 
 <br>
 
-## 9. Final Steps
+#### 9. Final Steps
 - **Add Yourself** as a follower of the metric.
 - After the metric is created, click the **ellipses (…)** on the metric tile and select **Set Goal**.
   - Type in: `600,000,000`
@@ -307,27 +308,27 @@ Leave other insights settings unchanged.
 
 ### ⏱️ Average Days to Close Metric
 
-## 1. Create New Metric
+#### 1. Create New Metric
 1. Click **New Metric Definition**.
 2. Connect to the same **Sales Cloud Data** source.
 3. Label the metric: **Avg Days to Close**
 
 <br>
 
-## 2. Metric Setup
+#### 2. Metric Setup
 - **Measure**: `Days to Close`
   - Change Aggregation to: `Average`
 - **Time Dimension**: `Close Date`
 
 <br>
 
-### Definition Filters
+#### Definition Filters
 - Filter on `Stage`
   - **Include only**: `Closed Won`
 
 <br>
 
-## 3. Adjustable Metric Filters
+#### 3. Adjustable Metric Filters
 - Account Name  
 - Forecast Category  
 - Opportunity Owner  
@@ -336,14 +337,14 @@ Leave other insights settings unchanged.
 
 <br>
 
-## 4. Formatting
+#### 4. Formatting
 - **Number Format**: `Number`  
 - **Singular**: `Day`  
 - **Plural**: `Days`
 
 <br>
 
-## 5. Time Settings
+#### 5. Time Settings
 Click **Next > Time**
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`  
@@ -351,13 +352,13 @@ Click **Next > Time**
 
 <br>
 
-## 6. Goal Settings
+#### 6. Goal Settings
 Click **Next > Goals**  
 - Skip
 
 <br>
 
-## 7. Insights
+#### 7. Insights
 Click **Next > Insights**
 - **Value Going Up**: `Unfavorable`
 - **Turn off** Record Level Insights
@@ -369,14 +370,14 @@ Return to the **Pulse Home Page**.
 
 ### 🏆 Win Rate Metric
 
-## 1. Create a New Metric
+#### 1. Create a New Metric
 1. From the Pulse Home Page, click **New Metric**.
 2. Connect to the **Sales Cloud Data** data source.
 3. Title the metric: **Win Rate**
 
 <br>
 
-## 2. Advanced Definition Setup
+#### 2. Advanced Definition Setup
 
 1. Click **Advanced Definition**.
 2. In the Advanced Analytics Editor, create a new calculated field:
@@ -393,21 +394,21 @@ Return to the **Pulse Home Page**.
   
 <br>
 
-## 3. Adjustable Metric Filters
+#### 3. Adjustable Metric Filters
 - Opportunity Owner  
 - Industry  
 - Lead Source  
 
 <br>
 
-## 4. Formatting
+#### 4. Formatting
 - **Number Format**: `Percentage`
 
 Click **Next**
 
 <br>
 
-## 5. Time Settings
+#### 5. Time Settings
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`
 
@@ -415,7 +416,7 @@ Click **Next**
 
 <br>
 
-## 6. Insights
+#### 6. Insights
 - **Value Going Up**: `Favorable`
 - **Turn Off** Record Level Outliers
 
@@ -432,7 +433,7 @@ You’re now ready to move on to building visualizations!
 
 ---
 
-# Step 5: Create Advanced Visualizations
+## Step 5: Create Advanced Visualizations
 
 ### 🔹 Visualization 1: Open Pipeline by Sales Rep
 
@@ -645,7 +646,7 @@ A **context filter** tells Tableau to apply one filter *before* calculating anot
 <br>
 ---
 
-# Step 7: Publish & Interact
+## Step 7: Publish & Interact
 
 Now that it's published, let's try it out!
 
@@ -674,19 +675,19 @@ If you're following along later or exploring on your own:
 
 ---
 
-# OPTIONAL / SELF-PACED - Step 8: Create Visualizations with Tableau Agent
+## Step 8 - OPTIONAL / SELF-PACED: Create Visualizations with Tableau Agent
 
 In this step, you'll use Tableau Agent to build three key visualizations based on your uploaded "Sales Cloud Data" source.
 
 ---
 
-## 1. Navigate to the Home Page
+### 1. Navigate to the Home Page
 
 - Click the **Tableau** logo or select **Home** from the left-hand navigation to return to the Home page.
 
 ---
 
-## 2. Access the Sales Cloud Data Source
+### 2. Access the Sales Cloud Data Source
 
 - Click the **Explore** tab in the left-hand sidebar.
 - Navigate to the **Default** project.
@@ -695,14 +696,14 @@ In this step, you'll use Tableau Agent to build three key visualizations based o
 
 ---
 
-## 3. Engage with Tableau Agent
+### 3. Engage with Tableau Agent
 
 - Click the **Agentforce** logo in the top-left to launch Tableau Agent.
 - Click the blue **"Got it"** button to enter the conversational experience.
 
 ---
 
-## 4. Create the "Top Reps" Visualization
+### 4. Create the "Top Reps" Visualization
 
 1. In Tableau Agent, type:  
    **`amount by owner`**  
@@ -721,7 +722,7 @@ In this step, you'll use Tableau Agent to build three key visualizations based o
 
 ---
 
-## 5. Create the "Top Open Opps" Visualization
+### 5. Create the "Top Open Opps" Visualization
 
 1. Open a **new worksheet**.
 
