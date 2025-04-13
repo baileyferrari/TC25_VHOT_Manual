@@ -437,8 +437,6 @@ Leave other insights settings unchanged.
 - After the metric is created, click the **ellipses (…)** on the metric tile and select **Set Goal**.
   - Type in: `600,000,000`
   - Click **Save**
-- Explore your new **Open Pipeline** metric!
-
 <details>
   <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
 
@@ -448,6 +446,8 @@ Leave other insights settings unchanged.
 
 <br>
 
+- Explore your new **Open Pipeline** metric!
+<br> 
 - Navigate back to the **Pulse Digest**
   - In the top left drop down, click into **Tableau Pulse** and select **Followed metrics**
 <details>
