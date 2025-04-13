@@ -2,7 +2,7 @@
 ## Lab Sections
 - **[Step 1: Create a Tableau Cloud Trial Site](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-1-create-a-tableau-cloud-trial-site)**
 
-- **[Step 2: Upload "Sales Cloud Data" as a Published Data Source](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
+- **[Step 2: Upload "Sales Cloud Data" as a Published Data Source](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-2-upload-sales-cloud-data-as-a-published-data-source)**
 
 - **[Step 3: Create Pulse Metrics](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
   - Open Pipe  
