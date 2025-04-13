@@ -609,8 +609,10 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
 ### 📊 Add Pulse Metrics to the Top Container
 
 1. In the **Objects** pane, find **Pulse Metric**.
+   
 <br>
-2. Drag in each of your three metrics to the **top container**:
+
+3. Drag in each of your three metrics to the **top container**:
    - **Open Pipeline**
      - Select the **"Quarter to Date"** card
      - Keep all defaults, click **Add to Dashboard**
@@ -618,8 +620,10 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
      - Select **Quarter to Date** > Add to Dashboard
    - **Win Rate**
      - Select **Quarter to Date** > Add to Dashboard
+    
 <br>
-3. Once all three are added, double-click the **gray hamburger menu** at the top of the container.
+
+4. Once all three are added, double-click the **gray hamburger menu** at the top of the container.
    - In the **blue dropdown menu**, select **Distribute Contents Evenly**
 
 <br>
