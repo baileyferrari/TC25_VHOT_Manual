@@ -448,6 +448,17 @@ Leave other insights settings unchanged.
 
 <br>
 
+- Navigate back to the **Pulse Digest**
+  - In the top left drop down, click into **Tableau Pulse** and select **Followed metrics**
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img29.png)
+
+</details>
+
+<br>
+
 ### ⏱️ Average Days to Close Metric
 
 #### 1. Create New Metric
