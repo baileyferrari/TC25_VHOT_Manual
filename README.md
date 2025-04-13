@@ -463,10 +463,34 @@ Leave other insights settings unchanged.
 
 #### 1. Create New Metric
 1. Click **New Metric Definition**.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img31.png)
+
+</details>
+<br>
+
 2. Connect to the same **Sales Cloud Data** source.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img32.png)
+
+</details>
+<br>
+
 3. Label the metric: **Avg Days to Close**
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img33.png)
+
+</details>
+
 <br>
+
 
 #### 2. Metric Setup
 - **Measure**: `Days to Close`
@@ -475,11 +499,25 @@ Leave other insights settings unchanged.
 
 <br>
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img34.png)
+
+</details>
+<br>
+
 #### Definition Filters
 - Filter on `Stage`
   - **Include only**: `Closed Won`
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
 
+  ![Alt text](Images/Img37.png)
+
+</details>
 <br>
+
 
 #### 3. Adjustable Metric Filters
 - Account Name  
@@ -488,12 +526,26 @@ Leave other insights settings unchanged.
 - Account Type  
 - Lead Source  
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img38.png)
+
+</details>
+
 <br>
 
 #### 4. Formatting
 - **Number Format**: `Number`  
 - **Singular**: `Day`  
 - **Plural**: `Days`
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img39.png)
+
+</details>
 
 <br>
 
@@ -502,6 +554,13 @@ Click **Next > Time**
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`  
 - **Time Comparison**: Keep defaults
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img40.png)
+
+</details>
 
 <br>
 
@@ -514,10 +573,41 @@ Click **Next > Goals**
 #### 7. Insights
 Click **Next > Insights**
 - **Value Going Up**: `Unfavorable`
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img43.png)
+
+</details>
+<br>
+
 - **Turn off** Record Level Insights
 
-Click **Save**, then **Follow the Metric**.  
-Return to the **Pulse Home Page**.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img44.png)
+
+</details>
+<br>
+
+#### 8. Save & Follow Metrics
+- Click **Save**, then **Follow the Metric**.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img45.png)
+
+</details>
+<br>
+  
+- Return to the **Pulse Home Page**.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img46.png)
+
+</details>
 
 <br>
 
