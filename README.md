@@ -2,23 +2,23 @@
 ## Lab Sections
 - **[Step 1: Create a Tableau Cloud Trial Site](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-1-create-a-tableau-cloud-trial-site-bailey)**
 
-- **[Step 2: Configure Your Tableau Cloud Site](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
+- **[Step 2: Upload "Sales Cloud Data" as a Published Data Source](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
 
-- **[Step 3: Upload "Sales Cloud Data" as a Published Data Source](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
-
-- **[Step 4: Create Pulse Metrics](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
+- **[Step 3: Create Pulse Metrics](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
   - Open Pipe  
   - Win Rate  
   - Average Days to Close
 
-- **[Step 5: Create Advanced Visualizations](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
+- **[Step 4: Create Advanced Visualizations](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
   - Open Pipeline by Sales Rep
   - Accounts by Stage
 
-- [**Step 6: Pull Your Metrics & Visualizations into a Dashboard**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-6-pull-your-metrics--visualizations-into-a-dashboard)
+- [**Step 5: Pull Your Metrics & Visualizations into a Dashboard**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-6-pull-your-metrics--visualizations-into-a-dashboard)
   - Sales Overview
 
-- [**Step 7: Publish & Interact**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-7-publish--interact)
+- [**Step 6: Publish & Interact**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-7-publish--interact)
+
+- **[Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with AI](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
 
 - [**Step 8 - OPTIONAL / SELF-PACED: Create Visualizations with Tableau Agent**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#optional--self-paced---step-8-create-visualizations-with-tableau-agent)
 
@@ -75,6 +75,15 @@ In your **standard (non-incognito)** browser window:
 
 <br>
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img2.png)
+
+</details>
+
+<br>
+
 ### 4. Fill Out the Trial Signup Form
 
 On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete the form with the following details:
@@ -93,6 +102,14 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 <br>
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img3.png)
+
+</details>
+
+<br>
 ### 5. Activate Your Tableau Account (Important!)
 
 1. In your **standard browser window** (signed into your email), look for an email with the subject:  
@@ -107,6 +124,15 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 > 🛠️ **Why this step matters:**  
 > Opening the activation link in incognito prevents Tableau from auto-redirecting you to an existing site. This ensures you're creating a brand-new Tableau Cloud trial site — even if you're part of a paid org or have requested a trial before.
+
+<br>
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img4.png)
+
+</details>
 
 <br>
 
@@ -125,12 +151,30 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 <br>
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img6.png)
+
+</details>
+
+<br>
+
 ### 7. Wait for Trial Activation
 
 - You’ll see a message that says:  
   **“Activating your trial site...”**
 - This process takes **1–2 minutes**.
 - When finished, you’ll be automatically redirected to your new **Tableau Cloud site homepage**.
+
+<br>
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img7.png)
+
+</details>
 
 <br>
 
