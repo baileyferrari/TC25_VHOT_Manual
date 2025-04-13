@@ -18,7 +18,7 @@
 
 - [**Step 6: Publish & Interact**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-7-publish--interact)
 
-- **[Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with AI](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
+- **[Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with Advanced AI](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
 
 - [**Step 8 - OPTIONAL / SELF-PACED: Create Visualizations with Tableau Agent**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#optional--self-paced---step-8-create-visualizations-with-tableau-agent)
 
@@ -176,44 +176,7 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 
 ---
 
-## Step 2: Configure Your Tableau Cloud Site
-
-Now that your trial site is activated, let’s configure it to unlock powerful AI and agentic capabilities we’ll be using throughout the lab.
-
-<br>
-
-### 1. Open Site Settings
-
-1. From the **Home** page of your Tableau Cloud site, scroll to the very bottom of the left-hand navigation.
-2. Click **Settings**.
-
-<br>
-
-### 2. Enable AI Features (General Tab)
-
-1. The **Settings** page will default to the **General** tab.
-2. Under the section titled **“Turn on AI in Tableau by feature area”**, **check every checkbox** that appears — these enable:
-   - Tableau Pulse summaries
-   - Semantic question matching
-   - Pulse Discover
-   - Conversational Web Authoring
-   - Tableau Prep suggestions
-
-3. Your screen should look like this:
-
-   ![Enable AI Features](Screenshot%202025-03-31%20at%208.57.03%E2%80%AFPM.png)
-
-4. Click the **blue "Save"** button in the upper right corner of the screen to apply these settings.
-
-<br>
-
-✅ **Nice job!** Your Tableau Cloud site is now fully configured for AI-driven insights and advanced reporting!
-
-<br>
-
----
-
-## Step 3: Upload "Sales Cloud Data" as a Published Data Source
+## Step 2: Upload "Sales Cloud Data" as a Published Data Source
 
 Next, we’ll upload the **Sales Cloud Data** file into Tableau Cloud to use in our exercises. This process creates a **Published Data Source** directly from the browser — no Tableau Desktop required.
 
@@ -264,7 +227,7 @@ In the upper left corner, click **“File”** → **“Close”** to return to 
 
 ---
 
-## Step 4: Create Pulse Metrics
+## Step 3: Create Pulse Metrics
 
 In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud Data" source you uploaded earlier.
 
@@ -469,7 +432,7 @@ You’re now ready to move on to building visualizations!
 
 ---
 
-## Step 5: Create Advanced Visualizations
+## Step 4: Create Advanced Visualizations
 
 ### 🔹 Visualization 1: Open Pipeline by Sales Rep
 
@@ -572,7 +535,7 @@ Next, we’ll create a more detailed view of opportunity amount by account name.
 
 <br>
 
-# Step 6: Pull Your Metrics & Visualizations into a Dashboard
+# Step 5: Pull Your Metrics & Visualizations into a Dashboard
 
 Now that we've created visualizations and Pulse metrics, it's time to combine them into a single, interactive dashboard.
 
@@ -639,7 +602,7 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
 1. **Show the dashboard title**:
    - In the top menu, go to **Dashboard** > **Show Title**
 <br>
-2. **Distribute visualizations evenly**:
+2. **Distribute contents evenly**:
    - Click into either viz, then double-click the **gray hamburger menu**
    - In the **blue dropdown**, select **Distribute Contents Evenly**
 <br>
@@ -682,7 +645,7 @@ A **context filter** tells Tableau to apply one filter *before* calculating anot
 <br>
 ---
 
-## Step 7: Publish & Interact
+## Step 6: Publish & Interact
 
 Now that it's published, let's try it out!
 
@@ -710,6 +673,43 @@ If you're following along later or exploring on your own:
 <br>
 
 ---
+
+## Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with Advanced AI
+
+Now that your trial site is activated, let’s configure it to unlock powerful AI and agentic capabilities we’ll be using throughout the lab.
+
+<br>
+
+### 1. Open Site Settings
+
+1. From the **Home** page of your Tableau Cloud site, scroll to the very bottom of the left-hand navigation.
+2. Click **Settings**.
+
+<br>
+
+### 2. Enable AI Features (General Tab)
+
+1. The **Settings** page will default to the **General** tab.
+2. Under the section titled **“Turn on AI in Tableau by feature area”**, **check every checkbox** that appears — these enable:
+   - Tableau Pulse summaries
+   - Semantic question matching
+   - Pulse Discover
+   - Conversational Web Authoring
+   - Tableau Prep suggestions
+
+3. Your screen should look like this:
+
+   ![Enable AI Features](Screenshot%202025-03-31%20at%208.57.03%E2%80%AFPM.png)
+
+4. Click the **blue "Save"** button in the upper right corner of the screen to apply these settings.
+
+<br>
+
+✅ **Nice job!** Your Tableau Cloud site is now fully configured for AI-driven insights and advanced reporting!
+
+<br>
+
+--
 
 ## Step 8 - OPTIONAL / SELF-PACED: Create Visualizations with Tableau Agent
 
