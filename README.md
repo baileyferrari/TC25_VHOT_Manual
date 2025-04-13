@@ -75,15 +75,6 @@ In your **standard (non-incognito)** browser window:
 
 <br>
 
-<details>
-  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
-
-  ![Alt text](Images/Img2.png)
-
-</details>
-
-<br>
-
 ### 4. Fill Out the Trial Signup Form
 
 On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete the form with the following details:
@@ -105,11 +96,12 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 <details>
   <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
 
-  ![Alt text](Images/Img3.png)
+  ![Alt text](Images/Img2.png)
 
 </details>
 
 <br>
+
 ### 5. Activate Your Tableau Account (Important!)
 
 1. In your **standard browser window** (signed into your email), look for an email with the subject:  
@@ -154,7 +146,7 @@ On the [Tableau Trial Page](https://www.tableau.com/products/trial), complete th
 <details>
   <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
 
-  ![Alt text](Images/Img6.png)
+  ![Alt text](Images/Img5.png)
 
 </details>
 
