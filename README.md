@@ -52,7 +52,7 @@
 In your **incognito window**, open the following two tabs:
 
 - **Tab 1**: Open the **GitHub repository** for this lab:  
-  👉 [TC25 Lab Repository](https://github.com/baileyferrari/TC25_VHOT_Manual)
+  👉 [TC25 Lab Manual](https://github.com/baileyferrari/TC25_VHOT_Manual)
 
   > This repo contains everything you'll need for the session, including:
   > - The full **lab manual** to follow along step-by-step
