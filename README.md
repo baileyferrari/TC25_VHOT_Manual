@@ -195,6 +195,13 @@ Go back to your Tableau Cloud **Home** page.
 Click the **“New”** drop-down menu at the top.  
 Select **“Published Data Source”** from the list.
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img8.png)
+
+</details>
+
 <br>
 
 ### 3. Connect to the CSV File
@@ -202,6 +209,13 @@ Select **“Published Data Source”** from the list.
 In the **Connect to Data** window that opens:  
 Toggle to the **"Files"** tab at the top.  
 Click to **browse for a file** and select the `Sales Cloud Data.csv` file you downloaded.
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img9.png)
+
+</details>
 
 <br>
 
@@ -214,12 +228,38 @@ In the popup window:
 
 Click **Publish**.
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img11.png)
+
+</details>
+
 <br>
 
 ### 5. Finish & Return to Home
 
 If you see a success message, acknowledge or close any pop-ups.  
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img12.png)
+
+</details>
+
+<br>
+
 In the upper left corner, click **“File”** → **“Close”** to return to your Tableau Cloud **Home** page.
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img13.png)
+
+</details>
+
+<br>
 
 ✅ **Success!** You’ve now uploaded and published your first data source to Tableau Cloud. You’ll use this dataset in the next steps of the lab.
 
