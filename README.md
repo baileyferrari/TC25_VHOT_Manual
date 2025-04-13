@@ -278,9 +278,19 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
 #### 1. Create New Metric
 
 1. From the left-hand navigation, click **Pulse**.
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img14.png)
+
+</details>
+
+<br>
+
 2. Click **New Metric Definition**.
-3. Search for and connect to your **Sales Cloud Data** published data source.
-4. Label the metric: **Open Pipeline**
+4. Search for and connect to your **Sales Cloud Data** published data source.
+5. Label the metric: **Open Pipeline**
 
 <br>
 
