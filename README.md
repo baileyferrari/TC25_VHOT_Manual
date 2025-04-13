@@ -591,7 +591,7 @@ Click **Next > Insights**
 </details>
 <br>
 
-#### 8. Save & Follow Metrics
+#### 8. Save & Follow Metric
 - Click **Save**, then **Follow the Metric**.
 <details>
   <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
