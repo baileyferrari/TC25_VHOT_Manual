@@ -289,8 +289,34 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
 <br>
 
 2. Click **New Metric Definition**.
-4. Search for and connect to your **Sales Cloud Data** published data source.
-5. Label the metric: **Open Pipeline**
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img15.png)
+
+</details>
+
+<br>
+
+3. Search for and connect to your **Sales Cloud Data** published data source.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img16.png)
+
+</details>
+
+<br>
+
+4. Label the metric: **Open Pipeline**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img17.png)
+
+</details>
+
 
 <br>
 
@@ -299,11 +325,25 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
   - Keep Aggregation as default: `Sum`, `Running Total`
 - **Time Dimension**: `Close Date`
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img18.png)
+
+</details>
+
 <br>
 
 #### 3. Add Definition Filters
 - Filter on `Stage`
   - **Exclude**: `Closed Lost`, `Closed Won`
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img21.png)
+
+</details>
 
 <br>
 
@@ -314,10 +354,24 @@ In this step, you’ll create three dynamic Pulse Metrics using the "Sales Cloud
 - Stage  
 - Forecast Category  
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img22.png)
+
+</details>
+
 <br>
 
 #### 5. Formatting
 - **Number Format**: Currency (`USD`)
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img23.png)
+
+</details>
 
 <br>
 
@@ -326,6 +380,13 @@ Click **Next > Time**
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`  
 - **Time Comparison**: Keep defaults (`Prior Year`, `Prior Period`)
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img24.png)
+
+</details>
 
 <br>
 
@@ -337,12 +398,37 @@ Click **Next > Goals**
 
 #### 8. Add Insights
 Click **Next > Insights**
-- **Value Going Up**: `Favorable`  
+- **Value Going Up**: `Favorable`
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img25.png)
+
+</details>
+
+<br>
+
 - **Record Identifier**: `Account ID`  
 - **Record Identifier Name**: `Account Name`  
 - **Singular**: `Account`, **Plural**: `Accounts`
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img26.png)
+
+</details>
+
+<br>
+
 Leave other insights settings unchanged.
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img27.png)
+
+</details>
 
 <br>
 
@@ -352,6 +438,13 @@ Leave other insights settings unchanged.
   - Type in: `600,000,000`
   - Click **Save**
 - Explore your new **Open Pipeline** metric!
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img28.png)
+
+</details>
 
 <br>
 
