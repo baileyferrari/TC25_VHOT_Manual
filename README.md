@@ -17,9 +17,9 @@
 - [**Step 5: Pull Your Metrics & Visualizations into a Dashboard**](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-5-pull-your-metrics--visualizations-into-a-dashboard)
   - Sales Overview
 
-- [**Step 6: Publish & Interact**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-7-publish--interact)
+- [**Step 6: Publish & Interact**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-6-publish--interact)
 
-- **[Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with Advanced AI](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-2-configure-your-tableau-cloud-site)**
+- **[Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with Advanced AI]**(https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-7-optional--self-paced-enable-your-tableau-cloud-site-with-advanced-ai)
 
 - [**Step 8 - OPTIONAL / SELF-PACED: Create Visualizations with Tableau Agent**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#optional--self-paced---step-8-create-visualizations-with-tableau-agent)
 
