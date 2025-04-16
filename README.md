@@ -800,8 +800,31 @@ You’re now ready to move on to building visualizations!
 
 #### 1. Create a new workbook
 - From Tableau Pulse, click into the top left drop-down menu and select **Tableau Cloud** to return to the Tableau Cloud Home Page
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img63.png)
+
+</details>
+<br>
+
 - From the home page, click into the **New** drop-down from the welcome banner and select **workbook**
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img64.png)
+
+</details>
+
+<br>
+
 - Connect to the **Sales Cloud Data** data source we uploaded previously
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img65.png)
+
+</details>
 
 Let’s build a visualization to show open pipeline by sales rep.
 
@@ -810,6 +833,13 @@ Let’s build a visualization to show open pipeline by sales rep.
 #### 2. Set up your basic bar chart:
 - In the **Data pane** on the left, drag **`Amount`** onto the **Columns** shelf.
 - Drag **`Opportunity Owner`** onto the **Rows** shelf.
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img66.png)
+
+</details>
 
 You should now see a horizontal bar chart showing the total opportunity amount each sales rep has ever owned.
 
@@ -820,24 +850,69 @@ You should now see a horizontal bar chart showing the total opportunity amount e
   - In the filter pop-up, check **`Closed Lost`** and **`Closed Won`**
   - Click **“Exclude selected values”**
   - Hit the blue **OK** button
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img67.png)
+
+</details>
+
+<br>
+
   - To apply this filter to all future visualizations:
     - Click the dropdown on the Stage filter pill > **Apply to Worksheets** > **All Using This Data Source**
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img68.png)
+
+</details>
 
 <br>
 
 - Drag **`Close Date`** onto the Filters shelf:
   - In the pop-up, choose **Relative Date** > click **Next**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img69.png)
+
+</details>
+
   - Change the dropdown from “Days” to **Years**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img70.png)
+
+</details>
+
   - Keep the default **“This year”** selection
   - Click **OK**
   - Apply this filter to all future visualizations:
     - Click the dropdown on the Close Date filter pill > **Apply to Worksheets** > **All Using This Data Source**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img71.png)
+
+</details>
 
 <br>
 
 #### 4. Change the visualization type:
 - Click the **Show Me** tab in the top right
 - Select the **Treemap** chart type
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img72.png)
+
+</details>
 
 <br>
 
@@ -847,6 +922,13 @@ You should now see a horizontal bar chart showing the total opportunity amount e
 - On **Windows**: hold **Ctrl** and drag `Opportunity ID` to **Label**
 - In the dialog that appears, choose **CNTD(Opportunity ID)** and click **OK**
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img73.png)
+
+</details>
+
 This will now show the **amount** represented by **size**, and the **number of opportunities** per rep as a label.
 
 <br>
@@ -854,6 +936,13 @@ This will now show the **amount** represented by **size**, and the **number of o
 #### 6. Rename your worksheet:
 - Double-click the sheet tab and rename it:  
   **`Amount by Rep`**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img75.png)
+
+</details>
   
 <br>
 ---
@@ -865,13 +954,36 @@ Next, we’ll create a more detailed view of opportunity amount by account name.
 #### 1. Build the base chart:
 - Drag **`Amount`** to the **Columns** shelf
 - Drag **`Account Name`** to the **Rows** shelf
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img76.png)
+
+</details>
+
 - Click the **Sort** icon in the toolbar to sort account names by value
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img77.png)
+
+</details>
 
 <br>
 
 #### 2. Filter to the top 10 accounts:
 - Drag **`Account Name`** to the **Filters** shelf
-- In the filter dialog, go to the **Top** tab
+- In the filter dialog, navitate to the **Top/Bottom** drop-down section
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img78.png)
+
+</details>
+
+<br>
+
   - Choose **By Field**
   - Set:
     - **Top**: leave as-is
@@ -880,19 +992,47 @@ Next, we’ll create a more detailed view of opportunity amount by account name.
     - **Aggregation**: `Sum`
   - Click **OK**
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img79.png)
+
+</details>
+
 <br>
 
 #### 3. Add color by stage:
 - Drag **`Stage`** to the **Color** section of the **Marks** card
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img80.png)
+
+</details>
 
 <br>
 
 #### 4. Make it color-blind friendly:
 - Click on the **Color** legend in the Marks card
 - In the **Edit Colors** window:
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img81.png)
+
+</details>
+
   - Change the palette to **Color Blind**
   - Click **Assign Palette**
   - Then click **OK**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img82.png)
+
+</details>
 
 <br>
 
@@ -916,12 +1056,35 @@ This third and final visualization will give us the **granularity needed to comp
    - Drag **`Amount`** to the **Columns** shelf.
    - Drag **`Opportunity Name`** to the **Rows** shelf.
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img83.png)
+
+</details>
+
+<br>
+
 3. **Adjust the axis to show full opportunity names**:
    - Hover over the **Y-axis** (vertical axis on the left).
    - When your cursor turns into a **black arrow**, click and drag the axis to **expand the space** and make labels readable.
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img84.png)
+
+</details>
+
 4. Rename the worksheet tab to:  
    **`Opp by Amount`**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img85.png)
+
+</details>
 
 ---
 
@@ -929,15 +1092,31 @@ This third and final visualization will give us the **granularity needed to comp
 
 Now we’ll embed this new worksheet as a dynamic **Viz in Tooltip** inside the **Accounts by Stage** view, allowing users to hover and inspect specific opportunities within a stacked bar.
 
-1. Click into the **`Accounts by Stage`** worksheet tab to open it.
+1. Click into the **`Accounts by Stage`** worksheet tab (the second viz we built) to open it.
 
 2. In the **Marks card**, click on **Tooltip**.
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img86.png)
+
+</details>
 
 3. In the **Tooltip editor**:
    - Click **Enter** a few times to create some space beneath the existing text.
 
 4. In the **top toolbar**, click the **Insert** dropdown:
    - Hover over **Sheet** > select **`Opp by Amount`**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img87.png)
+
+</details>
+
+<br>
 
    You’ll see a placeholder like:
 ``` <Sheet name="Opp by Amount" maxwidth="300" maxheight="300"> ```
@@ -949,11 +1128,29 @@ Now we’ll embed this new worksheet as a dynamic **Viz in Tooltip** inside the 
   Final version:
 ``` <Sheet name="Opp by Amount" maxwidth="600" maxheight="600"> ```
 
-  - Click OK to save the updated tooltip.
+<br>
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img88.png)
+
+</details>
+
+<br>
+
+  - Click **OK** to save the updated tooltip.
 
 ✅ Now when you hover over any stacked bar in the Accounts by Stage chart, you'll see the exact opportunity names (and amounts) that fall within that account + stage combination!
 
 This tooltip drill-down gives us both the aggregated picture and a direct line of sight into individual deals — perfect for quick pipeline inspection.
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img89.png)
+
+</details>
 
 <br>
 
@@ -966,46 +1163,138 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
 1. **Open a new dashboard**:
    - Click the **Dashboard icon** at the bottom of the screen (next to your worksheet tabs).
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img90.png)
+
+</details>
+
 <br>
 
 2. **Rename the dashboard**:
    - Double-click where it says **"Dashboard 1"**
    - Rename it: **`Sales Overview`**
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img91.png)
+
+</details>
+
 <br>
 
 3. **Adjust dashboard sizing**:
    - In the **Dashboard pane** on the left, change the **Size** dropdown to `Automatic`.
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img92.png)
+
+</details>
+
 <br>
 
 ### 🧱 Build the Layout with Containers
 
-1. In the **Objects** section of the **Dashboard pane**, drag out **two Horizontal containers**:
-   - Place the **first container** to take up the full width of the dashboard (upper half).
-   - Drop the **second container** just below it (lower half of the dashboard).
-  
+1. In the **Objects** section of the **Dashboard pane**, drag out **two Horizontal containers**
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img93.png)
+
+</details>
+
+<br>
+
+  - Place the **first container** to take up the full width of the dashboard (upper half).
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img94.png)
+
+</details>
+<br> 
+  - Drop the **second container** just below it (lower half of the dashboard).
+  <details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img95.png)
+
+</details>
 <br>
 
 ### 📊 Add Pulse Metrics to the Top Container
 
 1. In the **Objects** pane, find **Pulse Metric**.
-   
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img96.png)
+
+</details>
+
 <br>
 
 3. Drag in each of your three metrics to the **top container**:
-   - **Open Pipeline**
+   - Pull the Pulse Metric object into the top container
+     - Click the **Open Pipeline** metric
      - Select the **"Quarter to Date"** card
      - Keep all defaults, click **Add to Dashboard**
-   - **Avg Days to Close**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img98.png)
+
+</details>
+
+<br>
+
+  - Pull the Pulse Metric object into the top container
+    - Click the **Avg Days to Close** metric
+    - Select **Quarter to Date** > Add to Dashboard
+
+<br> 
+
+  - Pull the Pulse Metric object into the top container
+    - Click the **Win Rate** metric
      - Select **Quarter to Date** > Add to Dashboard
-   - **Win Rate**
-     - Select **Quarter to Date** > Add to Dashboard
-    
+
 <br>
 
 4. Once all three are added, double-click the **gray hamburger menu** at the top of the container.
-   - In the **blue dropdown menu**, select **Distribute Contents Evenly**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img99.png)
+
+</details>
+
+<br>
+
+A **blue menu** should appear atop the container. 
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img100.png)
+
+</details>
+
+<br> 
+
+Click into the container format drop down, and select select **Distribute Contents Evenly**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img101.png)
+
+</details>
 
 <br>
 
@@ -1013,6 +1302,7 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
 
 1. In the **Sheets** pane, drag **`Amount by Rep`** into the **bottom horizontal container** (left side).
    - A legend may appear on the right—don’t worry, we’ll remove it later.
+
 <br>
 
 2. Drag **`Accounts by Stage`** into the **right side** of the same container.
@@ -1022,24 +1312,59 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
    - Click the vertical section containing the legends
    - Click the blue **X** in the upper-left of that container to delete it
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img102.png)
+
+</details>
+
 <br>
 
 ### 🎨 Format the Dashboard
 
 1. **Show the dashboard title**:
    - In the top menu, go to **Dashboard** > **Show Title**
-   - 
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img104.png)
+
+</details>
 <br>
 
 2. **Distribute contents evenly**:
    - Click into either viz, then double-click the **gray hamburger menu**
    - In the **blue dropdown**, select **Distribute Contents Evenly**
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img103.png)
+
+</details>
+
 <br>
 
 3. **Fit both visualizations to screen**:
    - Click into **Amount by Rep**, use the dropdown to set **Fit** to **Entire View**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img105.png)
+
+</details>
+
    - Repeat for **Accounts by Stage**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img106.png)
+
+</details>
 
 <br>
 
@@ -1047,6 +1372,14 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
 
 1. In **Amount by Rep**, click the **filter icon** on the viz toolbar to enable interactivity.
    - Try clicking on **John Demby** in the treemap — you’ll see the other viz filter by rep.
+  
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img107.png)
+
+</details>
+
 <br>
 2. Uh oh! Only a few accounts appear — not the top 10. Why?
    - By default, Tableau is showing the top 10 **overall**, not per rep.
@@ -1062,9 +1395,25 @@ A **context filter** tells Tableau to apply one filter *before* calculating anot
 
 ### 🛠️ Fix the Filter with Context
 
-1. In the dashboard, click into the **Accounts by Stage** worksheet (via the icon beneath the "X" in its corner).
+1. In the dashboard, click into the **Accounts by Stage** worksheet (via the **Go-to sheet** icon beneath the "X" in the format menu).
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img108.png)
+
+</details>
+
+<br>
+
 2. In the **Filters** shelf, find **`Action (Opportunity Owner)`**
+
 3. Click its dropdown > select **Add to Context**
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img109.png)
+
+</details>
 
 <br>
 
@@ -1072,6 +1421,13 @@ A **context filter** tells Tableau to apply one filter *before* calculating anot
 
 1. From the **Accounts by Stage** worksheet, click the light blue **Publish As…** button in the top-right.
 2. Name your workbook: **`Sales Overview`**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img110.png)
+
+</details>
 
 <br>
 ---
@@ -1081,7 +1437,20 @@ A **context filter** tells Tableau to apply one filter *before* calculating anot
 Now that it's published, let's try it out!
 
 1. In the green banner at the top of the screen, click **Go to Workbook**
-2. Click to open the **Sales Overview** dashboard.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img111.png)
+
+</details>
+
+2. Click the dashboard tile open the **Sales Overview** dashboard.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img112.png)
+
+</details>
 
 3. Let's interact and drill down!
    - Click **“John Demby”** within the treemap.
@@ -1089,6 +1458,13 @@ Now that it's published, let's try it out!
    - Hover over the stacked bars — you’ll see insights like:
      - “John has over $4.5M with Displaytech in the Qualification stage.”
      - Thanks to the viz and tooltip, we can also see individual opp names and amounts!
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img113.png)
+
+</details>
 
 <br>
 
