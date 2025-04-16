@@ -9,11 +9,12 @@
   - Win Rate  
   - Average Days to Close
 
-- **[Step 4: Create Advanced Visualizations](https://github.com/baileyferrari/TC25_VHOT_Manual?tab=readme-ov-file#step-4-create-pulse-metrics)**
+- **[Step 4: Create Advanced Visualizations](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-4-create-advanced-visualizations)**
   - Open Pipeline by Sales Rep
   - Accounts by Stage
+  - Opp by Amount
 
-- [**Step 5: Pull Your Metrics & Visualizations into a Dashboard**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-6-pull-your-metrics--visualizations-into-a-dashboard)
+- [**Step 5: Pull Your Metrics & Visualizations into a Dashboard**](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-5-pull-your-metrics--visualizations-into-a-dashboard)
   - Sales Overview
 
 - [**Step 6: Publish & Interact**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-7-publish--interact)
@@ -1042,7 +1043,7 @@ Next, we’ll create a more detailed view of opportunity amount by account name.
 
 <br>
 
-## 📌 Visualization 3: Opportunity-Level Pipeline Detail (Viz in Tooltip)
+### 📌 Visualization 3: Opportunity-Level Pipeline Detail (Viz in Tooltip)
 
 This third and final visualization will give us the **granularity needed to complement the aggregate-level views**, enabling detailed inspection of individual opportunities within each account.
 
