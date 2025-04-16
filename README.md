@@ -896,8 +896,10 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
 1. In the **Sheets** pane, drag **`Amount by Rep`** into the **bottom horizontal container** (left side).
    - A legend may appear on the right—don’t worry, we’ll remove it later.
 <br>
+
 2. Drag **`Accounts by Stage`** into the **right side** of the same container.
 <br>
+
 3. Remove the legends:
    - Click the vertical section containing the legends
    - Click the blue **X** in the upper-left of that container to delete it
@@ -908,11 +910,15 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
 
 1. **Show the dashboard title**:
    - In the top menu, go to **Dashboard** > **Show Title**
+   - 
 <br>
+
 2. **Distribute contents evenly**:
    - Click into either viz, then double-click the **gray hamburger menu**
    - In the **blue dropdown**, select **Distribute Contents Evenly**
+
 <br>
+
 3. **Fit both visualizations to screen**:
    - Click into **Amount by Rep**, use the dropdown to set **Fit** to **Entire View**
    - Repeat for **Accounts by Stage**
@@ -959,11 +965,12 @@ Now that it's published, let's try it out!
 1. In the green banner at the top of the screen, click **Go to Workbook**
 2. Click to open the **Sales Overview** dashboard.
 
-3. Try it out!
-   - Click the **“John Demby”** rectangle in the treemap.
+3. Let's interact and drill down!
+   - Click **“John Demby”** within the treemap.
    - Watch the bottom chart update to show **John’s top 10 accounts**.
    - Hover over the stacked bars — you’ll see insights like:
      - “John has over $4.5M with Displaytech in the Qualification stage.”
+     - Thanks to the viz and tooltip, we can also see individual opp names and amounts!
 
 <br>
 
@@ -973,7 +980,7 @@ We’re pausing here for a live walkthrough of Tableau Agent.
 
 If you're following along later or exploring on your own:
 
-- Continue to the next section of this lab manual for **starter prompts** using this same dataset.
+- Continue to the next section of this lab manual -- we've provided a few **starter prompts** using this same dataset to show you how much easier it is to create similiar visualizations to what we created manually today.
 - You’re also welcome to use your **own prompts** or **upload new data**.
 - This trial site is **completely secure** and **only accessible to you** (or others you explicitly invite).
 
@@ -982,10 +989,6 @@ If you're following along later or exploring on your own:
 ---
 
 ## Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with Advanced AI
-
-Now that your trial site is activated, let’s configure it to unlock powerful AI and agentic capabilities we’ll be using throughout the lab.
-
-<br>
 
 ### 1. Open Site Settings
 
@@ -1004,25 +1007,13 @@ Now that your trial site is activated, let’s configure it to unlock powerful A
    - Conversational Web Authoring
    - Tableau Prep suggestions
 
-3. Your screen should look like this:
-
-   ![Enable AI Features](Screenshot%202025-03-31%20at%208.57.03%E2%80%AFPM.png)
-
 4. Click the **blue "Save"** button in the upper right corner of the screen to apply these settings.
-
-<br>
-
-✅ **Nice job!** Your Tableau Cloud site is now fully configured for AI-driven insights and advanced reporting!
 
 <br>
 
 --
 
 ## Step 8 - OPTIONAL / SELF-PACED: Create Visualizations with Tableau Agent
-
-In this step, you'll use Tableau Agent to build three key visualizations based on your uploaded "Sales Cloud Data" source.
-
----
 
 ### 1. Navigate to the Home Page
 
