@@ -680,11 +680,16 @@ You’re now ready to move on to building visualizations!
 
 ### 🔹 Visualization 1: Open Pipeline by Sales Rep
 
+#### 1. Create a new workbook
+- From Tableau Pulse, click into the top left drop-down menu and select **Tableau Cloud** to return to the Tableau Cloud Home Page
+- From the home page, click into the **New** drop-down from the welcome banner and select **workbook**
+- Connect to the **Sales Cloud Data** data source we uploaded previously
+
 Let’s build a visualization to show open pipeline by sales rep.
 
 <br>
 
-#### 1. Set up your basic bar chart:
+#### 2. Set up your basic bar chart:
 - In the **Data pane** on the left, drag **`Amount`** onto the **Columns** shelf.
 - Drag **`Opportunity Owner`** onto the **Rows** shelf.
 
@@ -692,7 +697,7 @@ You should now see a horizontal bar chart showing the total opportunity amount e
 
 <br>
 
-#### 2. Add filters to narrow the data:
+#### 3. Add filters to narrow the data:
 - Drag **`Stage`** onto the **Filters** shelf:
   - In the filter pop-up, check **`Closed Lost`** and **`Closed Won`**
   - Click **“Exclude selected values”**
@@ -712,13 +717,13 @@ You should now see a horizontal bar chart showing the total opportunity amount e
 
 <br>
 
-#### 3. Change the visualization type:
+#### 4. Change the visualization type:
 - Click the **Show Me** tab in the top right
 - Select the **Treemap** chart type
 
 <br>
 
-#### 4. Add context with a label:
+#### 5. Add context with a label:
 - Find **`Opportunity ID`** in the Data pane
 - On **Mac**: hold **Option** and drag `Opportunity ID` to the **Label** section on the **Marks card**
 - On **Windows**: hold **Ctrl** and drag `Opportunity ID` to **Label**
@@ -728,7 +733,7 @@ This will now show the **amount** represented by **size**, and the **number of o
 
 <br>
 
-#### 5. Rename your worksheet:
+#### 6. Rename your worksheet:
 - Double-click the sheet tab and rename it:  
   **`Amount by Rep`**
   
@@ -776,6 +781,61 @@ Next, we’ll create a more detailed view of opportunity amount by account name.
 #### 5. Rename your worksheet:
 - Double-click the sheet tab and rename it:  
   **`Accounts by Stage`**
+
+<br>
+
+## 📌 Visualization 3: Opportunity-Level Pipeline Detail (Viz in Tooltip)
+
+This third and final visualization will give us the **granularity needed to complement the aggregate-level views**, enabling detailed inspection of individual opportunities within each account.
+
+---
+
+### 🔧 Create the "Opp by Amount" Worksheet
+
+1. **Create a new worksheet** by clicking the **new sheet tab** at the bottom.
+
+2. In the **Data pane**:
+   - Drag **`Amount`** to the **Columns** shelf.
+   - Drag **`Opportunity Name`** to the **Rows** shelf.
+
+3. **Adjust the axis to show full opportunity names**:
+   - Hover over the **Y-axis** (vertical axis on the left).
+   - When your cursor turns into a **black arrow**, click and drag the axis to **expand the space** and make labels readable.
+
+4. Rename the worksheet tab to:  
+   **`Opp by Amount`**
+
+---
+
+### 🛠️ Add This Viz as a Tooltip (Viz in Tooltip)
+
+Now we’ll embed this new worksheet as a dynamic **Viz in Tooltip** inside the **Accounts by Stage** view, allowing users to hover and inspect specific opportunities within a stacked bar.
+
+1. Click into the **`Accounts by Stage`** worksheet tab to open it.
+
+2. In the **Marks card**, click on **Tooltip**.
+
+3. In the **Tooltip editor**:
+   - Click **Enter** a few times to create some space beneath the existing text.
+
+4. In the **top toolbar**, click the **Insert** dropdown:
+   - Hover over **Sheet** > select **`Opp by Amount`**
+
+   You’ll see a placeholder like:
+``` <Sheet name="Opp by Amount" maxwidth="300" maxheight="300"> ```
+
+5. Edit the inserted sheet tag:
+  - Change maxwidth="300" to maxwidth="600"
+  - Change maxheight="300" to maxheight="600"
+
+  Final version:
+``` <Sheet name="Opp by Amount" maxwidth="600" maxheight="600"> ```
+
+  - Click OK to save the updated tooltip.
+
+✅ Now when you hover over any stacked bar in the Accounts by Stage chart, you'll see the exact opportunity names (and amounts) that fall within that account + stage combination!
+
+This tooltip drill-down gives us both the aggregated picture and a direct line of sight into individual deals — perfect for quick pipeline inspection.
 
 <br>
 
