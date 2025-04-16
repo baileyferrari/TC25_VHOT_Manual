@@ -798,7 +798,6 @@ Now that we've created visualizations and Pulse metrics, it's time to combine th
 
 3. **Adjust dashboard sizing**:
    - In the **Dashboard pane** on the left, change the **Size** dropdown to `Automatic`.
-   - _(Optional but recommended)_ After adjusting to Automatic, consider switching to **Fixed** for a more consistent and performant layout.
 
 <br>
 
