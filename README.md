@@ -19,7 +19,7 @@
 
 - [**Step 6: Publish & Interact**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#step-6-publish--interact)
 
-- **[Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with Advanced AI]**(https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-7-optional--self-paced-enable-your-tableau-cloud-site-with-advanced-ai)
+- [**Step 7: OPTIONAL / SELF-PACED: Enable Your Tableau Cloud Site with Advanced AI**](https://github.com/baileyferrari/TC25_VHOT_Manual/blob/main/README.md#step-7-optional--self-paced-enable-your-tableau-cloud-site-with-advanced-ai)
 
 - [**Step 8 - OPTIONAL / SELF-PACED: Create Visualizations with Tableau Agent**](https://github.com/baileyferrari/TC25_VHOT_Manual/tree/main?tab=readme-ov-file#optional--self-paced---step-8-create-visualizations-with-tableau-agent)
 
