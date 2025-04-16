@@ -615,15 +615,56 @@ Click **Next > Insights**
 
 #### 1. Create a New Metric
 1. From the Pulse Home Page, click **New Metric**.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img48.png)
+
+</details>
+
+<br>
+
 2. Connect to the **Sales Cloud Data** data source.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img49.png)
+
+</details>
+
+<br>
+
 3. Title the metric: **Win Rate**
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img50.png)
+
+</details>
 
 <br>
 
 #### 2. Advanced Definition Setup
 
 1. Click **Advanced Definition**.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img51.png)
+
+</details>
+
+<br>
+
 2. In the Advanced Analytics Editor, create a new calculated field:
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img52.png)
+
+</details>
+
+Input the following:
    - **Name**: `Win Rate`
    - **Formula**:  
      ```
@@ -631,9 +672,44 @@ Click **Next > Insights**
      ```
    - Click **OK**
 
-3. Drag the `Win Rate` calculated field to the **Measure** box.
-4. Drag `Close Date` to the **Time Dimension** box.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img53.png)
+
+</details>
+
+<br>
+
+4. Drag the `Win Rate` calculated field to the **Measure** box.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img54.png)
+
+</details>
+
+<br>
+
+5. Drag `Close Date` to the **Time Dimension** box.
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img55.png)
+
+</details>
+
+<br>
+
+Update the field accordingly:
    - Click into the drop-down of the **YEAR(Close Date)** field → Select `Month` → Click **Apply**
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img56.png)
+
+</details>
   
 <br>
 
@@ -642,10 +718,24 @@ Click **Next > Insights**
 - Industry  
 - Lead Source  
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img57.png)
+
+</details>
+
 <br>
 
 #### 4. Formatting
 - **Number Format**: `Percentage`
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img58.png)
+
+</details>
 
 Click **Next**
 
@@ -655,19 +745,47 @@ Click **Next**
 - **Date Offset**: `180 days`  
 - **Minimum Time Granularity**: `Week`
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img59.png)
+
+</details>
+
 Click **Next**
 
 <br>
 
 #### 6. Insights
 - **Value Going Up**: `Favorable`
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img60.png)
+
+</details>
+
 - **Turn Off** Record Level Outliers
+
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img61.png)
+
+</details>
 
 Click **Save**, then **Follow the Metric**.
 
+<details>
+  <summary> ⚠️ <strong> HINT </strong> - Expand to view example sceenshot </summary>
+
+  ![Alt text](Images/Img62.png)
+
+</details>
+
 <br>
 
-✅ After completing this step, you’ll have three active Pulse Metrics:
+✅ After completing this step, you’ll have three active Pulse Metrics on your Pulse Digest:
 - **Open Pipeline**
 - **Avg Days to Close**
 - **Win Rate**
